@@ -1,2 +1,23 @@
 /* Extracted from landing-page-oman.html for v54_25 CSP hardening. */
 #faq .lpo-head{text-align:left!important;margin:0 0 32px!important}#faq .lpo-head .label-tag{display:inline-flex!important;width:auto!important;max-width:max-content!important;justify-content:flex-start!important;text-align:left!important}
+
+/* v54.78 demo card preview image fix: replace iframe previews blocked by frame security headers */
+.lpo-demo-preview-img{
+  position:absolute!important;
+  left:0!important;
+  top:28px!important;
+  width:100%!important;
+  height:calc(100% - 28px)!important;
+  border:0!important;
+  transform:none!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  pointer-events:none!important;
+  opacity:1!important;
+  background:#101014!important;
+  transition:filter .25s ease, transform .25s ease!important;
+}
+.lpo-demo-card:hover .lpo-demo-preview-img{
+  transform:scale(1.012)!important;
+  filter:saturate(1.08) contrast(1.03)!important;
+}

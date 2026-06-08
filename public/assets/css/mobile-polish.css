@@ -1,0 +1,69 @@
+/* Rozana v54.78 mobile UX polish */
+@media (max-width: 960px){
+  html{scroll-padding-top:86px;}
+  body.menu-open{overflow:hidden!important;}
+  .nav{padding:10px 0!important;}
+  .nav.scrolled{padding:8px 0!important;}
+  .nav__inner{min-height:48px!important;padding-right:0!important;gap:12px!important;}
+  .nav__logo{min-width:0!important;}
+  .nav__logo svg,.nav.scrolled .nav__logo svg{height:30px!important;max-width:min(210px,62vw)!important;}
+  .hamburger{display:flex!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:0!important;align-items:center!important;justify-content:center!important;gap:5px!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:999px!important;background:rgba(255,255,255,.035)!important;}
+  .hamburger span{width:22px!important;height:2px!important;border-radius:999px!important;}
+  .mobile-menu{inset:0!important;z-index:850!important;justify-content:flex-start!important;padding:calc(86px + env(safe-area-inset-top)) max(22px,6vw) 28px!important;overflow-y:auto!important;overscroll-behavior:contain!important;background:radial-gradient(circle at 85% 12%,rgba(138,96,208,.15),transparent 34%),rgba(9,9,12,.985)!important;}
+  .mm-links{width:100%!important;gap:0!important;margin:0!important;}
+  .mm-link{display:flex!important;align-items:center!important;min-height:54px!important;padding:16px 0!important;font-size:clamp(1.45rem,7.4vw,2rem)!important;line-height:1.08!important;font-weight:600!important;letter-spacing:-.025em!important;border-bottom:1px solid rgba(255,255,255,.08)!important;}
+  .hero,.page-hero{min-height:auto!important;padding-top:calc(96px + env(safe-area-inset-top))!important;padding-bottom:42px!important;justify-content:flex-end!important;}
+  .hero-content{padding-bottom:0!important;}
+  .hero-eyebrow{gap:10px!important;margin-bottom:16px!important;}
+  .hero-eyebrow-txt{font-size:9px!important;letter-spacing:.12em!important;line-height:1.55!important;}
+  .breadcrumb{font-size:9px!important;letter-spacing:.08em!important;gap:7px!important;line-height:1.45!important;margin-bottom:14px!important;}
+  .hero-headline{font-size:clamp(2.15rem,10.8vw,3.35rem)!important;line-height:1.05!important;letter-spacing:-.045em!important;margin-bottom:18px!important;max-width:13.2ch!important;}
+  .landing-oman-hero .hero-headline{font-size:clamp(2rem,10.3vw,3rem)!important;max-width:12.2ch!important;}
+  .page-hero-line,.hero-intel-effect{margin:0 0 18px!important;height:18px!important;}
+  .hero-bottom{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:18px!important;width:100%!important;}
+  .hero-desc{max-width:100%!important;font-size:.92rem!important;line-height:1.68!important;}
+  .hero-actions,.page-actions{width:100%!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;margin-top:4px!important;}
+  .hero-actions .btn-p,.hero-actions .btn-g,.page-actions .btn-p,.page-actions .btn-g{width:100%!important;min-height:46px!important;justify-content:center!important;text-align:center!important;padding:13px 16px!important;}
+  .hero-actions .btn-g,.page-actions .btn-g{border:1px solid var(--border-lite)!important;border-radius:4px!important;}
+  .scroll-ind,.page-scroll-ind{display:none!important;}
+  .content-section{padding:52px 0!important;}
+  .section-head{grid-template-columns:1fr!important;gap:12px!important;margin-bottom:22px!important;}
+  .section-desc{justify-self:start!important;text-align:left!important;max-width:100%!important;}
+  .section-title,.contact-title,.about-title,.svc-title,.insights-title,.page-title,.content-title,.cta-title,.lpo-section .section-title{font-size:clamp(1.72rem,8.2vw,2.35rem)!important;line-height:1.1!important;letter-spacing:-.03em!important;}
+  .pro-title,.svc-name,.price-card h3,.lpo-demo-body h3,.insight-card h3,.case-card h3,.faq-card h3{font-size:clamp(1.1rem,5vw,1.35rem)!important;line-height:1.22!important;}
+  .label-tag{font-size:9px!important;letter-spacing:.14em!important;}
+  .btn-p,.btn-g,.nav__cta,.service-link,.price-card__cta{min-height:44px;}
+}
+@media (max-width: 640px){
+  .container{width:calc(100% - 32px)!important;}
+  .nav__logo svg,.nav.scrolled .nav__logo svg{height:28px!important;max-width:196px!important;}
+  .hero,.page-hero{padding-top:88px!important;padding-bottom:36px!important;}
+  .hero-headline{font-size:clamp(2rem,11vw,2.9rem)!important;}
+  .hero-eyebrow-txt{letter-spacing:.1em!important;}
+  .breadcrumb{letter-spacing:.06em!important;}
+  .stats-grid,.blog-grid,.footer-top,.f-grid{grid-template-columns:1fr!important;}
+  .f-grid .f-span-2,.f-grid .f-span-3{grid-column:span 1!important;}
+  #contactForm .f-grid{grid-template-columns:1fr!important;row-gap:14px!important;}
+  #contactForm .f-label{font-size:10px!important;letter-spacing:.08em!important;}
+  #contactForm .f-input,#contactForm .f-select,#contactForm .f-textarea{font-size:.95rem!important;min-height:46px!important;}
+  #contactForm .f-textarea{min-height:145px!important;}
+  #contactForm .f-help{font-size:.78rem!important;line-height:1.5!important;}
+  #contactForm .f-footer{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:14px!important;}
+  #contactForm #fSubmit{width:100%!important;justify-content:center!important;}
+  .lpo-section{padding:48px 0!important;}
+  .lpo-head{margin-bottom:22px!important;}
+  .lpo-head p{font-size:.94rem!important;line-height:1.62!important;}
+  .lpo-demo-grid{gap:16px!important;}
+  .lpo-demo-card{border-radius:24px!important;}
+  .lpo-demo-media{padding:12px 12px 0!important;}
+  .lpo-demo-browser{height:210px!important;border-radius:18px 18px 0 0!important;}
+  .lpo-demo-body{padding:18px!important;}
+  .lpo-demo-body p{line-height:1.55!important;}
+  .lpo-demo-tags{gap:6px!important;}
+  .lpo-demo-tags span{font-size:11px!important;padding:6px 9px!important;}
+}
+@media (max-width: 380px){
+  .nav__logo svg,.nav.scrolled .nav__logo svg{max-width:176px!important;}
+  .hero-headline{font-size:clamp(1.9rem,10.8vw,2.55rem)!important;}
+  .mm-link{font-size:1.42rem!important;}
+}

@@ -73,6 +73,13 @@ function initMenu(){
     menu.classList.toggle('open',open);
     btn.setAttribute('aria-expanded',open?'true':'false');
     document.body.style.overflow=open?'hidden':'';
+    document.body.classList.toggle('menu-open',open);
+    if(open){
+      const firstLink=menu.querySelector('a');
+      if(firstLink) setTimeout(()=>firstLink.focus({preventScroll:true}),60);
+    }else{
+      btn.focus({preventScroll:true});
+    }
   };
   const toggle=()=>setOpen(!open);
   btn.addEventListener('click',toggle);

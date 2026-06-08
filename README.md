@@ -43,3 +43,8 @@ After adding or editing environment variables in Vercel, redeploy the project.
 - Remote Google Fonts links were removed from HTML; `assets/css/fonts-local.css` now uses local font detection and system fallbacks.
 - The embedded SEO dashboard snapshot was regenerated from the current static pages.
 - Remaining non-English copy on the English landing page service was corrected.
+
+## v54.78 update
+- Mobile UX polish added via `public/assets/css/mobile-polish.css`.
+- Demo page cards now use local static preview images instead of iframe previews.
+- All demo pages now include a fixed return button back to `/landing-page-oman#demo-pages`.
