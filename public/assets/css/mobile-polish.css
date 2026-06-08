@@ -67,3 +67,223 @@
   .hero-headline{font-size:clamp(1.9rem,10.8vw,2.55rem)!important;}
   .mm-link{font-size:1.42rem!important;}
 }
+
+/* Rozana v54.79 targeted mobile/demo/footer refinements */
+/* Demo preview images are now static visual captures, not iframes. */
+.lpo-demo-preview-img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  transform:none!important;
+  opacity:1!important;
+  background:#09090c!important;
+}
+.lpo-demo-card:hover .lpo-demo-preview-img{
+  transform:scale(1.025)!important;
+}
+.lpo-demo-browser{
+  background:#09090c!important;
+}
+
+/* Landing page FAQ visibility fix. */
+.lpo-faq-answer{
+  height:auto!important;
+  max-height:0!important;
+  overflow:hidden!important;
+  opacity:0!important;
+  transition:max-height .42s cubic-bezier(.16,1,.3,1), opacity .28s ease!important;
+}
+.lpo-faq-item.is-open .lpo-faq-answer{
+  height:auto!important;
+  max-height:980px!important;
+  opacity:1!important;
+}
+.lpo-faq-item.is-open .lpo-faq-answer p{
+  color:rgba(255,255,255,.78)!important;
+  visibility:visible!important;
+}
+
+/* Landing hero CTA spacing cleanup. */
+.landing-oman-hero .hero-bottom{
+  gap:18px!important;
+}
+.landing-oman-hero .hero-actions{
+  margin-top:0!important;
+}
+
+/* Footer legal links centered in the bottom row. */
+.footer-bottom{
+  justify-content:center!important;
+  text-align:center!important;
+}
+.footer-legal{
+  justify-content:center!important;
+  text-align:center!important;
+}
+
+@media (max-width: 960px){
+  /* Home hero alignment on mobile: keep the headline visually centered inside the viewport. */
+  #home .hero-content{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+  #home .hero-eyebrow,
+  #home .hero-bottom,
+  #home .hero-actions{
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  #home .hero-desc{
+    margin-inline:auto!important;
+    text-align:center!important;
+    max-width:34rem!important;
+  }
+  #home .hero-headline{
+    max-width:12.6ch!important;
+    margin-inline:auto!important;
+  }
+
+  /* Prevent long heading fragments like Practical Case Study from pushing outside the viewport. */
+  .hero-headline,
+  .section-title,
+  .pro-title,
+  .label-tag{
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+  }
+  .title-break .rz-no-italic,
+  .hero-headline .title-break .rz-no-italic,
+  .section-title .title-break .rz-no-italic{
+    white-space:normal!important;
+  }
+  #use-cases .hero-headline,
+  #use-cases .section-title,
+  body:has(#use-cases) .hero-headline{
+    max-width:100%!important;
+  }
+  #use-cases .label-tag,
+  body:has(#use-cases) .label-tag{
+    max-width:100%!important;
+    letter-spacing:.11em!important;
+    line-height:1.45!important;
+  }
+
+  /* Landing page hero buttons closer to the text above on mobile. */
+  .landing-oman-hero .hero-bottom{
+    gap:10px!important;
+  }
+  .landing-oman-hero .hero-actions,
+  .landing-oman-hero .hero-actions .btn-p,
+  .landing-oman-hero .hero-actions .btn-g{
+    margin-top:0!important;
+  }
+
+  /* Our Mission card: separate image and text on mobile to avoid cramped overlay. */
+  #about .home-mission-banner{
+    height:auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+    border-radius:24px!important;
+    background:linear-gradient(145deg,rgba(18,18,24,.98),rgba(9,9,13,.98))!important;
+  }
+  #about .home-mission-banner picture,
+  #about .home-mission-banner img{
+    width:100%!important;
+    height:190px!important;
+    border-radius:0!important;
+  }
+  #about .home-mission-banner img{
+    object-fit:cover!important;
+    object-position:center 38%!important;
+    opacity:.78!important;
+    filter:saturate(.96) contrast(1.05)!important;
+  }
+  #about .home-mission-banner::before{
+    bottom:auto!important;
+    height:190px!important;
+    background:linear-gradient(180deg,rgba(9,9,12,.10),rgba(9,9,12,.72))!important;
+  }
+  #about .home-mission-banner .about-intro-visual__copy{
+    position:relative!important;
+    left:auto!important;
+    right:auto!important;
+    top:auto!important;
+    transform:none!important;
+    max-width:none!important;
+    width:100%!important;
+    padding:18px!important;
+    background:linear-gradient(180deg,rgba(15,15,20,.96),rgba(10,10,14,.98))!important;
+  }
+  #about .home-mission-banner .about-intro-visual__copy strong{
+    font-size:1.36rem!important;
+    line-height:1.16!important;
+  }
+  #about .home-mission-banner .about-intro-visual__copy small{
+    display:block!important;
+    margin-top:10px!important;
+    font-size:.82rem!important;
+    line-height:1.58!important;
+    color:rgba(237,232,223,.72)!important;
+  }
+  #about .home-mission-banner__note{
+    display:flex!important;
+    width:100%!important;
+    margin-top:14px!important;
+    padding:11px 12px!important;
+    font-size:.88rem!important;
+    line-height:1.42!important;
+  }
+
+  /* Footer cards and spacing on mobile. */
+  .footer-top{
+    gap:14px!important;
+  }
+  .footer-top > div,
+  .footer-col{
+    padding:18px!important;
+    border:1px solid rgba(255,255,255,.08)!important;
+    border-radius:20px!important;
+    background:rgba(255,255,255,.025)!important;
+  }
+  .footer-col-title,
+  .footer-links,
+  .footer-contact,
+  .footer-tag,
+  .footer-partner-note{
+    text-align:left!important;
+  }
+  .footer-bottom{
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    gap:12px!important;
+    padding-top:22px!important;
+  }
+  .footer-copy,
+  .footer-legal{
+    width:100%!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+}
+
+@media (max-width: 420px){
+  #home .hero-headline{
+    max-width:11.8ch!important;
+  }
+  #about .home-mission-banner picture,
+  #about .home-mission-banner img,
+  #about .home-mission-banner::before{
+    height:170px!important;
+  }
+  .lpo-demo-browser{
+    height:196px!important;
+  }
+}
