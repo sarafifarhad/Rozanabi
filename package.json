@@ -1,6 +1,6 @@
 {
   "name": "rozana-next-static-bridge",
-  "version": "54.79.0",
+  "version": "54.80.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,7 +19,7 @@
     "typescript": "^5.9.3"
   },
   "engines": {
-    "node": ">=20.0.0 <23.0.0"
+    "node": ">=20.0.0 <25.0.0"
   },
   "overrides": {
     "postcss": "8.5.10"

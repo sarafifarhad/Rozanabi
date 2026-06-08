@@ -10,7 +10,7 @@
     ga4MeasurementId: '',
     googleAdsConversionId: '',
     configEndpoint: '/api/google-tools-config',
-    consentStorageKey: 'rz-cookie-consent-v54-76',
+    consentStorageKey: 'rz-cookie-consent-v54-80',
     requireCookieConsent: true,
     loadMode: 'gtm_preferred',
     debug: false

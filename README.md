@@ -1,6 +1,6 @@
-# Rozana Website - Next.js Static Bridge v54.77.0
+# Rozana Website - Next.js Static Bridge v54.80.0
 
-This build keeps the approved Rozana static pages in `public/` and adds Next.js API routes for the contact form. It also includes the v54.77 production-readiness fixes: real App Router 404 handling, root `/` rewrite without redirect, permanent clean-route redirects, `www` to apex-domain redirect, security headers, production fail-closed CSRF and Turnstile checks, cookie preference updates, demo-page Cookie Settings controls, typography cleanup, and homepage hero image priority cleanup.
+This build keeps the approved Rozana static pages in `public/` and adds Next.js API routes for the contact form. It includes production security, SEO, cookie consent, mobile UX polish, demo-page previews, footer refinements, and Vercel build-warning cleanup.
 
 ## Required Vercel Environment Variables
 
@@ -21,7 +21,7 @@ NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXXX
 NEXT_PUBLIC_GOOGLE_TOOLS_LOAD_MODE=gtm_preferred
 NEXT_PUBLIC_GOOGLE_TOOLS_DEBUG=false
 NEXT_PUBLIC_REQUIRE_COOKIE_CONSENT=true
-NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY=rz-cookie-consent-v54-77
+NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY=rz-cookie-consent-v54-80
 NEXT_PUBLIC_PRIMARY_DOMAIN=https://rozanabi.com
 NEXT_PUBLIC_WWW_DOMAIN=https://www.rozanabi.com
 ```
@@ -32,8 +32,8 @@ After adding or editing environment variables in Vercel, redeploy the project.
 
 - Keep `CONTACT_CSRF_SECRET` and `TURNSTILE_SECRET_KEY` configured in production. The form intentionally fails closed if either is missing.
 - Keep the `package-lock.json` file committed so Vercel installs reproducible dependencies.
-- The project targets Node.js `20.x`; set the same runtime in Vercel.
-- Security headers are enabled in `next.config.ts`. CSP is currently `Report-Only` so it can be monitored before switching to enforcing mode.
+- The package allows Node.js `>=20 <25`. The current Vercel project setting can use Node.js `24.x`; local testing also passed on the available Node runtime.
+- Security headers are enabled in `next.config.mjs`. CSP is enforced, not Report-Only.
 - For stronger form abuse protection, keep Cloudflare Turnstile enabled and add Cloudflare WAF/rate-limit rules at the domain level.
 
 
@@ -48,3 +48,15 @@ After adding or editing environment variables in Vercel, redeploy the project.
 - Mobile UX polish added via `public/assets/css/mobile-polish.css`.
 - Demo page cards now use local static preview images instead of iframe previews.
 - All demo pages now include a fixed return button back to `/landing-page-oman#demo-pages`.
+
+
+## v54.80 update
+- ROZANA wordmark text is bolder across header/footer SVG logos.
+- Mobile menu no longer shows the default blue focus box; menu items now reveal with a stepped glow/cascade effect.
+- Contact page “Start a Conversation” scrolls to the form without adding `#contact` to the address bar.
+- `next.config.ts` was converted to `next.config.mjs` to avoid Vercel installing TypeScript only to load the config file.
+- Node engine range now allows Vercel Node 24.x project settings.
+- Home mobile hero alignment and layout jumping were tightened.
+- Footer legal/copyright alignment was restored for desktop and improved for mobile.
+- Cookie modal hover styling keeps “Save Choices” readable.
+- Demo card preview images remain local and represent each demo layout.

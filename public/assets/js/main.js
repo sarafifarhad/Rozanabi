@@ -75,8 +75,8 @@ function initMenu(){
     document.body.style.overflow=open?'hidden':'';
     document.body.classList.toggle('menu-open',open);
     if(open){
-      const firstLink=menu.querySelector('a');
-      if(firstLink) setTimeout(()=>firstLink.focus({preventScroll:true}),60);
+      menu.setAttribute('tabindex','-1');
+      setTimeout(()=>menu.focus({preventScroll:true}),60);
     }else{
       btn.focus({preventScroll:true});
     }
@@ -86,6 +86,23 @@ function initMenu(){
   menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(open)setOpen(false);}));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)setOpen(false);});
   window.addEventListener('resize',()=>{if(window.innerWidth>960&&open)setOpen(false);},{passive:true});
+}
+
+function initDataScroll(){
+  document.querySelectorAll('[data-scroll-target]').forEach(el=>{
+    el.addEventListener('click',e=>{
+      const id=el.getAttribute('data-scroll-target');
+      const target=id ? document.getElementById(id) : null;
+      if(!target)return;
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth',block:'start'});
+      try{
+        if(window.history && window.history.replaceState){
+          window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+        }
+      }catch(err){}
+    });
+  });
 }
 
 function initReveal(){
@@ -652,7 +669,7 @@ function initCookie(){
   const accept=document.getElementById('cookieAccept');
   const reject=document.getElementById('cookieReject');
   const close=document.getElementById('cookieClose');
-  const COOKIE_KEY='rz-cookie-consent-v54-76';
+  const COOKIE_KEY='rz-cookie-consent-v54-80';
 
   const readStored=()=>{
     try{
@@ -922,6 +939,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   initReveal();
   initSitewideScrollFx();
   initScroll();
+  initDataScroll();
   initEventTracking();
   initForm();
   initCookie();
@@ -992,7 +1010,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         var save = document.getElementById('cookieSave');
         if(!banner) return;
         try{
-          var raw = localStorage.getItem('rz-cookie-consent-v54-76');
+          var raw = localStorage.getItem('rz-cookie-consent-v54-80');
           var existing = raw ? JSON.parse(raw) : null;
           var analytics = document.getElementById('cookieAnalytics');
           var marketing = document.getElementById('cookieMarketing');

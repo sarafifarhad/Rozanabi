@@ -1,5 +1,3 @@
-import type { NextConfig } from 'next';
-
 const scriptHashes = [
   "'sha256-V7ZX04Z18puN/+NFTXkoLWCRNlyYP9sNLaM3JuZGbbg='",
   "'sha256-fGegghFk3+BZLENLENjuryQ4DcON6/k/RtpHi+kUkXg='",
@@ -74,7 +72,8 @@ const securityHeaders = [
   },
 ];
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   async headers() {
     return [
       {
