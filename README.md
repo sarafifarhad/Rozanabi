@@ -1,4 +1,4 @@
-# Rozana Website - Next.js Static Bridge v54.80.0
+# Rozana Website - Next.js Static Bridge v54.90.0
 
 This build keeps the approved Rozana static pages in `public/` and adds Next.js API routes for the contact form. It includes production security, SEO, cookie consent, mobile UX polish, demo-page previews, footer refinements, and Vercel build-warning cleanup.
 
@@ -60,3 +60,9 @@ After adding or editing environment variables in Vercel, redeploy the project.
 - Footer legal/copyright alignment was restored for desktop and improved for mobile.
 - Cookie modal hover styling keeps “Save Choices” readable.
 - Demo card preview images remain local and represent each demo layout.
+
+## v54.90 update
+- Updated project/package version references to `54.90.0`.
+- Tightened landing-page mobile hero CTA spacing.
+- Standardized the header Get in Touch CTA size.
+- Reduced the visual gap inside the Rozana logo lockup and aligned the Brand Element wordmark typography with the main logo.

@@ -2,7 +2,7 @@
   'use strict';
 
   var COOKIE_KEY = (window.RZ_GOOGLE_TOOLS_CONFIG && window.RZ_GOOGLE_TOOLS_CONFIG.consentStorageKey) || 'rz-cookie-consent';
-  var VERSION = 'v54.85';
+  var VERSION = 'v54.90';
 
   var bannerHtml = '' +
     '<aside aria-label="Cookie preferences" aria-live="polite" class="cookie" id="cookieBanner" role="dialog">' +
@@ -31,7 +31,7 @@
     document.head.appendChild(style);
   }
 
-  var LEGACY_KEYS = ['rz-cookie-consent-v54-84','rz-cookie-consent-v54-83','rz-cookie-consent-v54-80','rz-cookie-consent-v54-77','rz-cookie-consent-v54-76'];
+  var LEGACY_KEYS = ['rz-cookie-consent-v54-85','rz-cookie-consent-v54-84','rz-cookie-consent-v54-83','rz-cookie-consent-v54-80','rz-cookie-consent-v54-77','rz-cookie-consent-v54-76'];
 
   function readStored(){
     try{
