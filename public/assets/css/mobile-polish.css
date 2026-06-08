@@ -483,3 +483,21 @@
   border-color:#d8bd73!important;
   text-shadow:none!important;
 }
+
+
+/* Rozana v54.82 logo readability + build-stability polish */
+.brand-mark .brand-mark-subtitle,
+.nav__logo .brand-mark text:nth-of-type(2),
+.footer-logo text:nth-of-type(2){
+  font-weight:700!important;
+  letter-spacing:.12em!important;
+  fill:var(--gold)!important;
+  opacity:.94!important;
+  font-size:8.8px!important;
+  text-rendering:geometricPrecision!important;
+}
+.nav__logo .brand-mark text:first-of-type,
+.footer-logo text:first-of-type{
+  font-weight:800!important;
+  letter-spacing:.10em!important;
+}
