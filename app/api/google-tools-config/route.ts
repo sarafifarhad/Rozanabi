@@ -22,7 +22,7 @@ export async function GET(req: NextRequest) {
       gtmContainerId: value('NEXT_PUBLIC_GTM_CONTAINER_ID'),
       ga4MeasurementId: value('NEXT_PUBLIC_GA4_MEASUREMENT_ID'),
       googleAdsConversionId: value('NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID'),
-      consentStorageKey: value('NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY') || 'rz-cookie-consent-v54-84',
+      consentStorageKey: 'rz-cookie-consent',
       requireCookieConsent: boolValue('NEXT_PUBLIC_REQUIRE_COOKIE_CONSENT', true),
       loadMode: value('NEXT_PUBLIC_GOOGLE_TOOLS_LOAD_MODE') || 'gtm_preferred',
       debug: boolValue('NEXT_PUBLIC_GOOGLE_TOOLS_DEBUG', false),

@@ -49,7 +49,7 @@
 - `next.config.ts`: removed
 - `next.config.mjs`: active
 - Inline ROZANA wordmark `font-weight="400"`: 0 remaining
-- Cookie consent storage key fallback aligned to `rz-cookie-consent-v54-80`
+- Cookie consent storage key fallback aligned to `rz-cookie-consent`
 
 ## Deploy note
 

@@ -670,7 +670,7 @@ function initCookie(){
   const accept=document.getElementById('cookieAccept');
   const reject=document.getElementById('cookieReject');
   const close=document.getElementById('cookieClose');
-  const COOKIE_KEY='rz-cookie-consent-v54-84';
+  const COOKIE_KEY='rz-cookie-consent';
 
   const readStored=()=>{
     try{
@@ -1011,7 +1011,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         var save = document.getElementById('cookieSave');
         if(!banner) return;
         try{
-          var raw = localStorage.getItem('rz-cookie-consent-v54-84');
+          var raw = localStorage.getItem('rz-cookie-consent');
           var existing = raw ? JSON.parse(raw) : null;
           var analytics = document.getElementById('cookieAnalytics');
           var marketing = document.getElementById('cookieMarketing');

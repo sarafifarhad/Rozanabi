@@ -7,7 +7,7 @@
 3. Removed remaining `/contact#contact` links from public HTML and converted them to `/contact`.
 4. Matched Landing Page Design mobile hero buttons to the compact full-width rhythm used by other page headers.
 5. Returned the Home hero copy to the original left-aligned mobile placement.
-6. Updated package version to 54.84.0 and cookie consent key to `rz-cookie-consent-v54-84`.
+6. Updated package version to 54.84.0 and cookie consent key to `rz-cookie-consent`.
 
 ## Verification targets after deploy
 

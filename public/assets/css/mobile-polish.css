@@ -799,3 +799,175 @@ body:has(#contact) .hero-actions button.btn-p{
     background:transparent!important;
   }
 }
+
+/* Rozana v54.85 logo, button, footer note and cookie refinements */
+/* Larger lockup with clearer subtitle spacing */
+.nav__logo svg,
+.nav__logo .brand-mark{
+  height:42px!important;
+  width:auto!important;
+  overflow:visible!important;
+}
+.nav.scrolled .nav__logo svg,
+.nav.scrolled .nav__logo .brand-mark{
+  height:34px!important;
+}
+.footer-logo,
+.footer .brand-mark.footer-logo{
+  height:54px!important;
+  width:auto!important;
+  overflow:visible!important;
+}
+.brand-mark text:first-of-type{
+  font-weight:800!important;
+}
+.brand-mark-subtitle{
+  font-weight:800!important;
+  letter-spacing:.095em!important;
+}
+@media (max-width:760px){
+  .nav__logo svg,
+  .nav__logo .brand-mark{height:39px!important;}
+  .nav.scrolled .nav__logo svg,
+  .nav.scrolled .nav__logo .brand-mark{height:33px!important;}
+  .footer-logo,
+  .footer .brand-mark.footer-logo{height:52px!important;}
+}
+
+/* One button typography system across links and real buttons. */
+.btn-p,
+.btn-g,
+button.btn-p,
+button.btn-g,
+.nav__cta,
+#fSubmit,
+.price-card__cta,
+.service-link{
+  font-family:var(--font-label)!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+  font-weight:700!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+}
+.btn-p,
+button.btn-p,
+#fSubmit{
+  min-height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  padding:14px 28px!important;
+  color:var(--bg)!important;
+  background:var(--txt-primary)!important;
+  border:0!important;
+  border-radius:var(--r-sm)!important;
+  cursor:pointer!important;
+}
+.btn-p:hover,
+button.btn-p:hover,
+#fSubmit:hover{
+  color:var(--bg)!important;
+  background:var(--gold)!important;
+}
+.btn-g,
+button.btn-g{
+  min-height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  color:var(--txt-sec)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+
+/* Page hero CTA consistency on mobile: Services rhythm across FAQ, Contact, Case Study, legal pages and Landing Page. */
+@media (max-width:960px){
+  .page-hero .hero-bottom,
+  .landing-oman-hero .hero-bottom,
+  .legal-header-page .hero-bottom{
+    gap:14px!important;
+  }
+  .page-hero .hero-actions,
+  .landing-oman-hero .hero-actions,
+  .legal-header-page .hero-actions,
+  .hero-actions{
+    width:100%!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+    margin-top:2px!important;
+  }
+  .page-hero .hero-actions .btn-p,
+  .page-hero .hero-actions .btn-g,
+  .page-hero .hero-actions button.btn-p,
+  .page-hero .hero-actions button.btn-g,
+  .landing-oman-hero .hero-actions .btn-p,
+  .landing-oman-hero .hero-actions .btn-g,
+  .legal-header-page .hero-actions .btn-p,
+  .legal-header-page .hero-actions .btn-g{
+    width:100%!important;
+    min-height:46px!important;
+    padding:13px 16px!important;
+    text-align:center!important;
+    white-space:normal!important;
+    border-radius:var(--r-sm)!important;
+  }
+  .page-hero .hero-actions .btn-g,
+  .page-hero .hero-actions button.btn-g,
+  .landing-oman-hero .hero-actions .btn-g,
+  .legal-header-page .hero-actions .btn-g{
+    border:1px solid var(--border-lite)!important;
+    border-bottom:1px solid var(--border-lite)!important;
+    padding:13px 16px!important;
+  }
+  .contact .f-footer,
+  .contact-form .f-footer{
+    gap:14px!important;
+  }
+  #fSubmit{
+    width:100%!important;
+    padding:13px 16px!important;
+  }
+}
+
+/* Home mission note mobile: exact two-line wording requested. */
+.home-mission-banner__note--split{
+  gap:4px!important;
+}
+.home-mission-banner__note--split::before{
+  display:none!important;
+}
+.home-mission-banner__note--split .mission-line{
+  display:block!important;
+  width:100%!important;
+  color:var(--txt-primary)!important;
+}
+.home-mission-banner__note--split .mission-line--accent{
+  color:var(--accent-lite)!important;
+}
+@media (max-width:760px){
+  .home-mission-banner__note--split{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    line-height:1.42!important;
+    padding:12px 14px!important;
+  }
+}
+
+/* Footer cookie links: no underline even after cookie script injects its late inline style. */
+.footer-legal [data-cookie-settings],
+.footer-legal a,
+.footer-legal-btn{
+  text-decoration:none!important;
+  border-bottom:0!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}

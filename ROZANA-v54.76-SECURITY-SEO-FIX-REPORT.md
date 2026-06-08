@@ -7,7 +7,7 @@ Applied fixes:
 3. Google Search Console placeholder meta tags removed from all HTML pages. Use Cloudflare DNS verification or paste the real token before launch.
 4. Turnstile placeholder removed from contact HTML. The widget now waits for a configured public site key and the server remains fail-closed when the Turnstile secret is missing in production.
 5. CSP changed from Report-Only to enforced `Content-Security-Policy`; script `unsafe-inline` removed and inline JSON-LD scripts are covered by SHA-256 hashes.
-6. Cookie consent storage fallback normalized to `rz-cookie-consent-v54-77` across JS, API and env docs.
+6. Cookie consent storage fallback normalized to `rz-cookie-consent` across JS, API and env docs.
 7. Contact API rate limiter now cleans expired entries periodically.
 8. Canonical URLs and sitemap moved to clean URLs without `.html`; `.html` routes redirect permanently to clean routes while clean routes rewrite internally.
 9. `/api/google-tools-config` and `/api/contact-config` now require a same-origin custom header and use cache headers.

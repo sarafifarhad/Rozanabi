@@ -9,7 +9,7 @@
 5. Reduced and standardized the `Start a Conversation` button typography in Contact so it matches the rest of the site CTA labels.
 6. Restored desktop footer rhythm while keeping a cleaner mobile footer legal placement.
 7. Updated project version to `54.84.0`.
-8. Updated cookie consent key to `rz-cookie-consent-v54-84`.
+8. Updated cookie consent key to `rz-cookie-consent`.
 
 ## Validation targets
 
