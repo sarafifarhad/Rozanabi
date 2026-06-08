@@ -79,7 +79,7 @@ main .content-section .section-title .no-break{white-space:nowrap}
 .landing-oman-hero .hero-headline{max-width:18.5ch!important}
 @media(max-width:640px){.landing-oman-hero .hero-headline{max-width:15ch!important}}
 
-/* Rozana v54.96 — refined mini-website demo cards */
+/* Rozana v54.97 — refined mini-website demo cards */
 #demo-pages .lpo-demo-grid{gap:22px}
 #demo-pages .lpo-demo-card{position:relative;background:linear-gradient(180deg,rgba(12,12,18,.98),rgba(8,8,12,.98));border:1px solid rgba(255,255,255,.09);border-radius:32px;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.34)}
 #demo-pages .lpo-demo-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--demo-accent,#8a60d0),var(--demo-accent-soft,#c9a76c));opacity:.95;z-index:2}
@@ -119,3 +119,38 @@ main .content-section .section-title .no-break{white-space:nowrap}
   #demo-pages .lpo-demo-points{gap:7px;margin:14px 0}
   #demo-pages .lpo-demo-kicker{font-size:.61rem}
 }
+
+/* Rozana v54.97 — ultra-minimal demo cards, aligned CTAs */
+#demo-pages .lpo-demo-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;align-items:stretch!important;grid-auto-rows:1fr!important;}
+#demo-pages .lpo-demo-card{height:100%!important;background:#0b0b0f!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:28px!important;box-shadow:none!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;transition:transform .22s ease,border-color .22s ease!important;}
+#demo-pages .lpo-demo-card:hover{transform:translateY(-3px)!important;box-shadow:none!important;border-color:rgba(255,255,255,.18)!important;}
+#demo-pages .lpo-demo-card::before,#demo-pages .lpo-demo-card::after{display:none!important;}
+#demo-pages .lpo-demo-media{padding:12px 12px 0!important;background:#0b0b0f!important;border-bottom:1px solid rgba(255,255,255,.07)!important;}
+#demo-pages .lpo-demo-browser{height:246px!important;border-radius:20px 20px 0 0!important;border:1px solid rgba(255,255,255,.08)!important;border-bottom:0!important;background:#111!important;box-shadow:none!important;}
+#demo-pages .lpo-demo-browser::before{top:12px!important;left:14px!important;width:7px!important;height:7px!important;opacity:.6!important;}
+#demo-pages .lpo-demo-browser::after{top:12px!important;left:58px!important;right:58px!important;height:8px!important;background:rgba(255,255,255,.06)!important;}
+#demo-pages .lpo-demo-body{padding:22px!important;display:flex!important;flex-direction:column!important;flex:1 1 auto!important;min-height:255px!important;}
+#demo-pages .lpo-demo-kicker{margin:0 0 12px!important;padding:0!important;background:transparent!important;border:0!important;color:var(--demo-accent-soft,#c9a76c)!important;font-family:var(--font-label)!important;font-size:.62rem!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;}
+#demo-pages .lpo-demo-kicker::before{display:none!important;}
+#demo-pages .lpo-demo-body h3{margin:0 0 11px!important;color:#fff!important;font-family:var(--font-heading)!important;font-size:24px!important;line-height:1.05!important;font-weight:650!important;letter-spacing:-.035em!important;}
+#demo-pages .lpo-demo-body p{margin:0!important;color:rgba(255,255,255,.66)!important;font-family:var(--font-body)!important;font-size:14.5px!important;line-height:1.68!important;min-height:74px!important;}
+#demo-pages .lpo-demo-points,#demo-pages .lpo-demo-tags{display:none!important;}
+#demo-pages .lpo-demo-meta{display:flex!important;gap:8px!important;flex-wrap:wrap!important;margin:18px 0 18px!important;}
+#demo-pages .lpo-demo-meta span{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:30px!important;padding:7px 11px!important;border-radius:999px!important;background:rgba(255,255,255,.045)!important;border:1px solid rgba(255,255,255,.08)!important;color:rgba(255,255,255,.68)!important;font-family:var(--font-body)!important;font-size:12px!important;font-weight:700!important;}
+#demo-pages .lpo-demo-body .service-link{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:100%!important;max-width:none!important;min-height:44px!important;margin-top:auto!important;padding:0 16px!important;border:1px solid rgba(255,255,255,.13)!important;border-radius:999px!important;background:rgba(255,255,255,.035)!important;color:#fff!important;font-family:var(--font-label)!important;font-size:.66rem!important;font-weight:700!important;letter-spacing:.16em!important;text-transform:uppercase!important;}
+#demo-pages .lpo-demo-body .service-link::after{content:""!important;display:none!important;}
+#demo-pages .lpo-demo-body .service-link:hover{background:#fff!important;color:#09090c!important;border-color:#fff!important;}
+#demo-pages .lpo-demo-card:nth-child(1){--demo-accent-soft:#8de5e8;}
+#demo-pages .lpo-demo-card:nth-child(2){--demo-accent-soft:#dcefd8;}
+#demo-pages .lpo-demo-card:nth-child(3){--demo-accent-soft:#ffd1a8;}
+#demo-pages .lpo-demo-card:nth-child(4){--demo-accent-soft:#eadfd2;}
+#demo-pages .lpo-demo-card:nth-child(5){--demo-accent-soft:#e9c682;}
+#demo-pages .lpo-demo-card:nth-child(6){--demo-accent-soft:#ffd8e5;}
+#demo-pages .lpo-demo-card:nth-child(7){--demo-accent-soft:#cfe0ff;}
+#demo-pages .lpo-demo-card:nth-child(8){--demo-accent-soft:#f0dce5;}
+#demo-pages .lpo-demo-card:nth-child(9){--demo-accent-soft:#f0dcc2;}
+#demo-pages .lpo-demo-card:nth-child(10){--demo-accent-soft:#d6def7;}
+#demo-pages .lpo-demo-card:nth-child(11){--demo-accent-soft:#d3edf0;}
+#demo-pages .lpo-demo-card:nth-child(12){--demo-accent-soft:#d9e0f8;}
+@media(max-width:1100px){#demo-pages .lpo-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:640px){#demo-pages .lpo-demo-grid{grid-template-columns:1fr!important;}#demo-pages .lpo-demo-browser{height:218px!important;}#demo-pages .lpo-demo-body{min-height:auto!important;padding:20px!important;}#demo-pages .lpo-demo-body p{min-height:auto!important;}#demo-pages .lpo-demo-body .service-link{margin-top:18px!important;}}
