@@ -1051,3 +1051,32 @@ button.btn-g{
     border-bottom:1px solid var(--border-lite)!important;
   }
 }
+
+
+/* Rozana v54.87 — landing hero CTA spacing and button consistency. */
+@media (max-width:960px){
+  .landing-oman-hero .hero-bottom{
+    gap:8px!important;
+  }
+  .landing-oman-hero .hero-desc{
+    margin-bottom:0!important;
+  }
+  .landing-oman-hero .hero-actions{
+    margin-top:0!important;
+    gap:10px!important;
+  }
+}
+
+/* Rozana v54.87 — keep all CTA label typography stable, including form submit and cookie links. */
+.btn-p,.btn-g,.btn-link,.price-card__cta,.f-footer .btn-p,button.btn-p,a.btn-p,button.btn-g,a.btn-g{
+  font-family:var(--font-label)!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+  font-weight:700!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+}
+.f-footer .btn-p,#fSubmit{
+  min-height:46px!important;
+  padding:13px 18px!important;
+}
