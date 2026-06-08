@@ -1095,3 +1095,102 @@ button.btn-g{
   #demo-pages .lpo-demo-body .service-link{margin-top:10px!important;padding-top:6px!important;}
   .contact-context-note{margin:10px 0 16px;padding:13px 14px;font-size:.82rem;border-radius:14px;}
 }
+
+/* Rozana v54.89 — scoped corrections for landing mobile spacing, desktop partner note, and nav CTA size. */
+@media (min-width:761px){
+  .home-mission-banner__note--split,
+  #about .home-mission-banner__note--split{
+    display:inline-flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:0!important;
+    width:auto!important;
+    max-width:max-content!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    padding:12px 16px!important;
+    text-align:left!important;
+    line-height:1.45!important;
+  }
+  .home-mission-banner__note--split::before,
+  #about .home-mission-banner__note--split::before{
+    display:block!important;
+  }
+  .home-mission-banner__note--split .mission-line,
+  #about .home-mission-banner__note--split .mission-line{
+    display:inline!important;
+    width:auto!important;
+    color:var(--txt-primary)!important;
+  }
+  .home-mission-banner__note--split .mission-line--accent,
+  #about .home-mission-banner__note--split .mission-line--accent{
+    margin-left:.25em!important;
+    color:var(--accent-lite)!important;
+  }
+}
+@media (max-width:760px){
+  .home-mission-banner__note--split,
+  #about .home-mission-banner__note--split{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:2px!important;
+    text-align:center!important;
+    line-height:1.42!important;
+  }
+  .home-mission-banner__note--split .mission-line,
+  #about .home-mission-banner__note--split .mission-line{
+    display:block!important;
+    width:100%!important;
+    text-align:center!important;
+  }
+}
+
+/* Restore desktop header CTA sizing; mobile menu/page CTAs keep their mobile system. */
+@media (min-width:961px){
+  .nav__cta{
+    width:auto!important;
+    min-width:0!important;
+    min-height:auto!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:10px 22px!important;
+    font-family:var(--font-label)!important;
+    font-size:10px!important;
+    line-height:1.2!important;
+    font-weight:700!important;
+    letter-spacing:.15em!important;
+    text-transform:uppercase!important;
+    white-space:nowrap!important;
+    border-radius:var(--r-sm)!important;
+  }
+}
+
+/* Landing Page Design: reduce only the mobile space between copy and header CTAs. */
+@media (max-width:960px){
+  .landing-oman-hero .hero-bottom{
+    gap:4px!important;
+    row-gap:4px!important;
+  }
+  .landing-oman-hero .hero-desc{
+    margin-bottom:0!important;
+    padding-bottom:0!important;
+  }
+  .landing-oman-hero .hero-actions{
+    margin-top:-4px!important;
+    padding-top:0!important;
+    gap:10px!important;
+  }
+}
+@media (max-width:520px){
+  .landing-oman-hero .hero-bottom{
+    gap:2px!important;
+    row-gap:2px!important;
+  }
+  .landing-oman-hero .hero-actions{
+    margin-top:-6px!important;
+  }
+}
