@@ -1264,7 +1264,7 @@ button.btn-g{
 }
 
 
-/* Rozana v54.93 — mobile hero parity and CTA sizing hard lock.
+/* Rozana v54.94 — mobile hero parity and CTA sizing hard lock.
    Purpose: Landing Page Design mobile header must follow the same close copy-to-button rhythm as Services. */
 @media (max-width:960px){
   body.landing-page-oman-body .landing-oman-hero{
@@ -1412,7 +1412,7 @@ body .cta-panel > button.btn-p{
   }
 }
 
-/* Rozana v54.93 final mobile spacing + unified CTA system */
+/* Rozana v54.94 final mobile spacing + unified CTA system */
 .btn-p,
 a.btn-p,
 button.btn-p,

@@ -1,11 +1,11 @@
-# ROZANA v54.93 — Mini Website Demo Refresh Report
+# ROZANA v54.94 — Mini Website Demo Refresh Report
 
 ## Summary
 This update refreshes the Landing Page Design and Optimization demo area and replaces the older generic landing-page-style examples with more realistic mini website demos.
 
 ## What was updated
-- Project version updated to **54.93.0**.
-- Public cache-busting references updated from `54.91` to `54.93`.
+- Project version updated to **54.94.0**.
+- Public cache-busting references updated from `54.91` to `54.94`.
 - Landing page service demo section rewritten from generic demo pages to **mini website demos**.
 - New business-specific demo pages added:
   - `demo-afrooz-mini-website.html`
