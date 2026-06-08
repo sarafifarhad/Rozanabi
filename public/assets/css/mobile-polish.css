@@ -1262,3 +1262,152 @@ button.btn-g{
 .footer-logo text:nth-of-type(2){
   letter-spacing:.095em!important;
 }
+
+
+/* Rozana v54.91 — mobile hero parity and CTA sizing hard lock.
+   Purpose: Landing Page Design mobile header must follow the same close copy-to-button rhythm as Services. */
+@media (max-width:960px){
+  body.landing-page-oman-body .landing-oman-hero{
+    min-height:0!important;
+    height:auto!important;
+    display:block!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    padding-top:88px!important;
+    padding-bottom:32px!important;
+    overflow:hidden!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-content{
+    min-height:0!important;
+    height:auto!important;
+    display:block!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .breadcrumb{
+    margin-bottom:12px!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-eyebrow{
+    margin-bottom:14px!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-headline{
+    margin-top:0!important;
+    margin-bottom:14px!important;
+    max-width:15ch!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .page-hero-line{
+    height:16px!important;
+    margin:0 0 16px!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-bottom{
+    width:100%!important;
+    max-width:100%!important;
+    min-height:0!important;
+    height:auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    gap:14px!important;
+    row-gap:14px!important;
+    margin:0!important;
+    padding:0!important;
+    position:relative!important;
+    inset:auto!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-desc{
+    width:100%!important;
+    max-width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    flex:0 0 auto!important;
+    line-height:1.66!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-actions{
+    width:100%!important;
+    max-width:100%!important;
+    min-height:0!important;
+    height:auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+    margin:0!important;
+    padding:0!important;
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    flex:0 0 auto!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-actions > a,
+  body.landing-page-oman-body .landing-oman-hero .hero-actions > button{
+    width:100%!important;
+    min-height:46px!important;
+    padding:13px 16px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    white-space:normal!important;
+    line-height:1.2!important;
+  }
+}
+@media (max-width:640px){
+  body.landing-page-oman-body .landing-oman-hero{
+    padding-top:86px!important;
+    padding-bottom:30px!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-bottom{
+    gap:12px!important;
+    row-gap:12px!important;
+  }
+  body.landing-page-oman-body .landing-oman-hero .hero-actions{
+    gap:10px!important;
+  }
+}
+@media (min-width:961px){
+  body .nav .nav__cta,
+  body .nav__actions .nav__cta{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    box-sizing:border-box!important;
+    width:auto!important;
+    min-width:0!important;
+    height:36px!important;
+    min-height:36px!important;
+    padding:0 22px!important;
+    font-family:var(--font-label)!important;
+    font-size:10px!important;
+    line-height:1!important;
+    font-weight:700!important;
+    letter-spacing:.15em!important;
+    text-transform:uppercase!important;
+    white-space:nowrap!important;
+    border-radius:var(--r-sm)!important;
+  }
+}
+body .cta-panel > a.btn-p,
+body .cta-panel > button.btn-p{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  min-height:46px!important;
+  padding:13px 28px!important;
+  line-height:1.2!important;
+  white-space:nowrap!important;
+}
+@media (max-width:640px){
+  body .cta-panel > a.btn-p,
+  body .cta-panel > button.btn-p{
+    width:100%!important;
+    max-width:100%!important;
+    padding:13px 16px!important;
+    white-space:normal!important;
+  }
+}
