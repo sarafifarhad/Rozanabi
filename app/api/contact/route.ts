@@ -43,6 +43,7 @@ const allowedScopes = [
 const allowedTimelines = ['Immediately', 'Within 1 month', '1–3 months', '3–6 months', 'Exploring options'];
 const allowedMarkets = ['Oman', 'GCC', 'International / Other'];
 const allowedRequestTypes = ['free_landing_page_review', 'landing_page_design_optimization', 'seo_organic_growth', ''];
+const allowedLandingPackages = ['', 'starter-120', 'professional-150', 'local-growth-220', 'ai-ready-280'];
 
 const rateMap = new Map<string, { count: number; resetAt: number }>();
 let lastRateCleanupAt = 0;
@@ -404,6 +405,9 @@ function buildEmail(fields: FieldMap) {
     ['Business Field', fields.businessSector],
     ['Request Type', fields.requestType],
     ['Request Source', fields.requestSource],
+    ['Landing Package', fields.landingPackageLabel],
+    ['Package Price', fields.landingPackagePrice],
+    ['Package ID', fields.landingPackage],
     ['Page URL', fields.pageUrl],
     ['Submitted At', new Date().toISOString()],
   ];
@@ -467,6 +471,9 @@ export async function POST(req: NextRequest) {
     businessSector: singleLine(form.get('businessSector'), 160),
     requestType: singleLine(form.get('requestType'), 120),
     requestSource: singleLine(form.get('requestSource'), 120),
+    landingPackage: singleLine(form.get('landingPackage'), 80),
+    landingPackageLabel: singleLine(form.get('landingPackageLabel'), 180),
+    landingPackagePrice: singleLine(form.get('landingPackagePrice'), 80),
     pageUrl: singleLine(form.get('pageUrl'), 500),
     message: multiLine(form.get('message'), 4000),
   };
@@ -488,6 +495,7 @@ export async function POST(req: NextRequest) {
     validateChoice(fields.timeline, allowedTimelines, 'timeline');
     validateChoice(fields.market, allowedMarkets, 'market');
     validateChoice(fields.requestType, allowedRequestTypes, 'request type');
+    validateChoice(fields.landingPackage, allowedLandingPackages, 'landing page package');
   } catch (error) {
     return json(422, { ok: false, message: error instanceof Error ? error.message : 'Invalid form selection.' });
   }
@@ -505,7 +513,7 @@ export async function POST(req: NextRequest) {
 
   const isLanding = fields.service.includes('Landing Page') || fields.requestType.includes('landing');
   const subject = isLanding
-    ? `New landing page request: ${fields.company}`
+    ? `New landing page request: ${fields.company}${fields.landingPackageLabel ? ` - ${fields.landingPackageLabel}` : ''}`
     : `New Rozana inquiry: ${fields.company} - ${fields.service}`;
   const { html, text } = buildEmail(fields);
 

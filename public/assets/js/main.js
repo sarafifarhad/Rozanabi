@@ -519,8 +519,27 @@ function initForm(){
   const syncLandingReviewFields=syncServicePath;
 
 
+  const landingPackageMap={
+    'starter-120':{label:'Starter — One-Link Page',price:'120 OMR',service:'Landing Page Design and Optimization',scope:'Landing page design & optimization',requestType:'free_landing_page_review'},
+    'professional-150':{label:'Recommended — Professional Landing Page',price:'150 OMR',service:'Landing Page Design and Optimization',scope:'Landing page design & optimization',requestType:'free_landing_page_review'},
+    'local-growth-220':{label:'Local Visibility — Local Growth',price:'220 OMR',service:'Landing Page Design and Optimization',scope:'Landing page design & optimization',requestType:'free_landing_page_review'},
+    'ai-ready-280':{label:'Search Structure — AI-Ready Local Page',price:'280 OMR',service:'Landing Page Design and Optimization',scope:'Landing page design & optimization',requestType:'free_landing_page_review'}
+  };
+
+  const setLandingPackageContext=(packageId)=>{
+    const clean=String(packageId||'').trim().toLowerCase();
+    const selected=landingPackageMap[clean]||null;
+    const packageField=form.querySelector('[name="landingPackage"]');
+    const packageLabelField=form.querySelector('[name="landingPackageLabel"]');
+    const packagePriceField=form.querySelector('[name="landingPackagePrice"]');
+    if(packageField) packageField.value=selected ? clean : '';
+    if(packageLabelField) packageLabelField.value=selected ? selected.label : '';
+    if(packagePriceField) packagePriceField.value=selected ? selected.price : '';
+    return selected;
+  };
+
   const sanitizeRequestSource=(rawSource,fallbackReferrer)=>{
-    const allowedTokens=['landing-page-oman','free-landing-page-review','landing-page-review','seo-review','contact-page','website','instagram','google-business-profile','email','whatsapp','direct'];
+    const allowedTokens=['landing-page-oman','landing-page-oman-pricing','free-landing-page-review','landing-page-review','seo-review','contact-page','website','instagram','google-business-profile','email','whatsapp','direct'];
     const cleanString=(value)=>String(value||'').trim().replace(/[\r\n\t]/g,' ').slice(0,240);
     const sanitizeOne=(value)=>{
       const clean=cleanString(value);
@@ -548,20 +567,24 @@ function initForm(){
     const params=new URLSearchParams(window.location.search||'');
     const request=params.get('request')||'';
     const source=sanitizeRequestSource(params.get('source'),document.referrer);
+    const selectedPackage=setLandingPackageContext(params.get('package')||'');
     const requestType=form.querySelector('[name="requestType"]');
     const requestSource=form.querySelector('[name="requestSource"]');
     if(requestSource) requestSource.value=source;
     if(request==='landing-page-review'||request==='free-landing-page-review'){
       if(serviceField) serviceField.value='Landing Page Design and Optimization';
-      if(requestType) requestType.value='free_landing_page_review';
+      if(scopeField) scopeField.value='Landing page design & optimization';
+      if(requestType) requestType.value=(selectedPackage && selectedPackage.requestType) ? selectedPackage.requestType : 'free_landing_page_review';
       const note=document.getElementById('contactContextNote');
       if(note){
         note.hidden=false;
-        note.innerHTML='<strong>Landing Page Review selected</strong><span>Share your Instagram, website if available, Google Business link if available, and what action you want customers to take: WhatsApp, call, location, booking or lead form.</span>';
+        const packageLine=selectedPackage ? '<span><strong>Selected package:</strong> '+selectedPackage.label+' — '+selectedPackage.price+'</span>' : '<span><strong>Default package:</strong> Recommended — Professional Landing Page — 150 OMR</span>';
+        note.innerHTML='<strong>Landing Page Review selected</strong>'+packageLine+'<span>Share your Instagram, website if available, Google Business link if available, and what action you want customers to take: WhatsApp, call, location, booking or lead form.</span>';
       }
       const message=form.querySelector('[name="message"]');
       if(message && !message.value){
-        message.placeholder='Tell us whether you need a simple landing page, Google Business setup, WhatsApp / call / location buttons, demo layout, or a better link for Instagram bio.';
+        const selectedText=selectedPackage ? ('Selected package: '+selectedPackage.label+' — '+selectedPackage.price+'. ') : 'Default package: Recommended — Professional Landing Page — 150 OMR. ';
+        message.placeholder=selectedText+'Tell us whether you need a simple landing page, Google Business setup, WhatsApp / call / location buttons, demo layout, or a better link for Instagram bio.';
       }
     }
     if(request==='seo-review'){
