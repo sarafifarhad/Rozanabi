@@ -971,3 +971,83 @@ button.btn-g{
   background-image:none!important;
   box-shadow:none!important;
 }
+
+
+/* Rozana v54.86 — mobile page-hero CTA alignment parity with Services.
+   Applies the same stacked, full-width, fixed-type button rhythm to FAQ, Privacy Policy, Terms & Conditions, Cookie Policy and any legal header page. */
+@media (max-width: 960px){
+  body.legal-header-page .page-hero .hero-bottom,
+  body.has-right-hero-actions.legal-header-page .page-hero .hero-bottom,
+  body.has-right-hero-actions .page-hero .hero-bottom{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    width:100%!important;
+    max-width:100%!important;
+    gap:16px!important;
+  }
+  body.legal-header-page .page-hero .hero-desc,
+  body.has-right-hero-actions.legal-header-page .page-hero .hero-desc,
+  body.has-right-hero-actions .page-hero .hero-desc{
+    width:100%!important;
+    max-width:100%!important;
+    flex:0 1 auto!important;
+  }
+  body.legal-header-page .page-hero .hero-actions,
+  body.has-right-hero-actions.legal-header-page .page-hero .hero-actions,
+  body.has-right-hero-actions .page-hero .hero-actions,
+  .page-hero .hero-actions{
+    width:100%!important;
+    max-width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    right:auto!important;
+    flex:0 0 auto!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+  }
+  body.legal-header-page .page-hero .hero-actions > a,
+  body.legal-header-page .page-hero .hero-actions > button,
+  body.has-right-hero-actions.legal-header-page .page-hero .hero-actions > a,
+  body.has-right-hero-actions.legal-header-page .page-hero .hero-actions > button,
+  body.has-right-hero-actions .page-hero .hero-actions > a,
+  body.has-right-hero-actions .page-hero .hero-actions > button,
+  .page-hero .hero-actions > a,
+  .page-hero .hero-actions > button{
+    width:100%!important;
+    max-width:100%!important;
+    min-height:46px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    padding:13px 16px!important;
+    font-family:var(--font-label)!important;
+    font-size:10px!important;
+    line-height:1.2!important;
+    font-weight:700!important;
+    letter-spacing:.16em!important;
+    text-transform:uppercase!important;
+    white-space:normal!important;
+    border-radius:var(--r-sm)!important;
+  }
+  body.legal-header-page .page-hero .hero-actions > .btn-p,
+  body.has-right-hero-actions .page-hero .hero-actions > .btn-p{
+    color:var(--bg)!important;
+    background:var(--txt-primary)!important;
+    border:0!important;
+  }
+  body.legal-header-page .page-hero .hero-actions > .btn-g,
+  body.has-right-hero-actions .page-hero .hero-actions > .btn-g,
+  .page-hero .hero-actions > .btn-g{
+    color:var(--txt-sec)!important;
+    background:transparent!important;
+    border:1px solid var(--border-lite)!important;
+    border-bottom:1px solid var(--border-lite)!important;
+  }
+}
