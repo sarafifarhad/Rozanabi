@@ -1,0 +1,7 @@
+/* Rozana local font bridge.
+   No third-party font requests are made from production HTML.
+   Browsers use locally installed Inter / DM Sans when available, then system fallbacks.
+   To fully self-host exact brand fonts later, add licensed .woff2 files under assets/fonts/ and replace the local() sources below with url() sources. */
+@font-face{font-family:"Inter";src:local("Inter"),local("Inter Regular");font-weight:400 700;font-style:normal;font-display:swap;}
+@font-face{font-family:"DM Sans";src:local("DM Sans"),local("DMSans-Regular");font-weight:400 700;font-style:normal;font-display:swap;}
+:root{--font-display:"Inter","Segoe UI",Arial,sans-serif;--font-label:"Inter","Segoe UI",Arial,sans-serif;--font-body:"DM Sans","Segoe UI",Arial,sans-serif;}

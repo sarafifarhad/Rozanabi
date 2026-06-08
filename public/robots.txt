@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /internal/
+Disallow: /storage/
+Disallow: /api/
+
+Sitemap: https://rozanabi.com/sitemap.xml

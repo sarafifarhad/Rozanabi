@@ -1,0 +1,4 @@
+v54.67 deploy fix
+- Removed package-lock.json because the previous lock file contained environment-specific registry URLs.
+- Vercel should run npm install from package.json and fetch packages from the public npm registry.
+- Node engine set to 20.x for stable Vercel builds.

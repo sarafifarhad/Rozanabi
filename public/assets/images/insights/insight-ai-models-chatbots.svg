@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Choosing the Right AI Model for Business Chatbots">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="880" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111018"/><stop offset=".48" stop-color="#09090C"/><stop offset="1" stop-color="#171020"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="170" y1="90" x2="760" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1DCA5"/><stop offset=".52" stop-color="#C9A76C"/><stop offset="1" stop-color="#8A60D0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop stop-color="#A67FE6" stop-opacity=".22"/><stop offset=".42" stop-color="#C9A76C" stop-opacity=".12"/><stop offset="1" stop-color="#09090C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+    <style>
+      .line{fill:none;stroke:#C9A76C;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:.72}
+      .pline{fill:none;stroke:#A67FE6;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:.58}
+      .thin{fill:none;stroke:#EDE8DF;stroke-width:1.25;stroke-linecap:round;opacity:.22}
+      .gold{fill:url(#gold)}.dark{fill:#121118;stroke:rgba(237,232,223,.12);stroke-width:1.4}
+      .node{fill:#C9A76C;filter:drop-shadow(0 0 8px rgba(201,167,108,.5))}
+      .pnode{fill:#A67FE6;filter:drop-shadow(0 0 10px rgba(166,127,230,.55))}
+      .label{font-family:Inter,Arial,sans-serif;font-weight:700;letter-spacing:8px;font-size:20px;fill:#EDE8DF;opacity:.34}
+    </style>
+  </defs>
+  <rect width="960" height="560" rx="38" fill="url(#bg)"/>
+  <rect x="34" y="34" width="892" height="492" rx="30" fill="none" stroke="rgba(237,232,223,.09)"/>
+  <circle cx="480" cy="270" r="250" fill="url(#glow)"/>
+  <path class="thin" d="M105 120H330M630 120H855M105 440H330M630 440H855"/>
+  
+  <g>
+    <rect class="dark" x="350" y="150" width="260" height="184" rx="36"/>
+    <path class="line" d="M414 224h132M414 260h86"/><path class="pline" d="M610 284l54 50v-58"/>
+    <path class="pline" d="M480 182L536 238L480 294L424 238Z"/><path class="line" d="M480 210L508 238L480 266L452 238Z"/>
+    <rect class="dark" x="220" y="318" width="204" height="86" rx="30"/><rect class="dark" x="536" y="318" width="204" height="86" rx="30"/>
+    <path class="thin" d="M285 360h76M600 360h76"/><circle class="node" cx="258" cy="360" r="7"/><circle class="pnode" cx="570" cy="360" r="7"/>
+    <path class="pline" d="M424 360h112"/>
+    <text class="label" x="368" y="466">AI CHATBOT</text>
+  </g>
+</svg>

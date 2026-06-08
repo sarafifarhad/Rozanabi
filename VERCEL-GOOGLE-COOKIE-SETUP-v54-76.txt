@@ -1,0 +1,42 @@
+Rozana v54.72 - Google Monitoring + Cookie Consent Setup
+
+1) Add these public Environment Variables in Vercel Project Settings > Environment Variables:
+
+NEXT_PUBLIC_GTM_CONTAINER_ID=GTM-XXXXXXX
+NEXT_PUBLIC_GA4_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_TOOLS_LOAD_MODE=gtm_preferred
+NEXT_PUBLIC_GOOGLE_TOOLS_DEBUG=false
+NEXT_PUBLIC_REQUIRE_COOKIE_CONSENT=true
+NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY=rz-cookie-consent-v54-77
+NEXT_PUBLIC_PRIMARY_DOMAIN=https://rozanabi.com
+NEXT_PUBLIC_WWW_DOMAIN=https://www.rozanabi.com
+
+2) Recommended setup:
+- Use GTM as the main container.
+- Configure GA4 and Google Ads tags inside GTM.
+- Keep NEXT_PUBLIC_GOOGLE_TOOLS_LOAD_MODE=gtm_preferred.
+
+3) If GTM is not ready yet:
+- Keep NEXT_PUBLIC_GTM_CONTAINER_ID empty.
+- Add NEXT_PUBLIC_GA4_MEASUREMENT_ID for direct GA4 loading.
+- Add NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID for direct Google Ads config.
+
+4) Cookie behavior:
+- Essential cookies are always active.
+- Analytics Cookies and Marketing Cookies are pre-selected in Manage Choices.
+- Google monitoring tools load after Accept All or Save Choices with the relevant category enabled.
+- Reject All keeps Google analytics and marketing storage denied.
+
+5) After any Environment Variable change:
+- Vercel > Project > Deployments > Redeploy.
+
+6) Browser testing:
+- Clear localStorage key rz-cookie-consent-v54-77 or open an incognito window.
+- Accept All.
+- Run in Console: RozanaAnalytics.status()
+- Check Network for gtm.js or gtag/js.
+
+
+V54.76 NOTE:
+The site no longer loads Google-hosted font files from production HTML. Contact API calls use /api/contact and /api/csrf directly.

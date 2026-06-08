@@ -1,0 +1,80 @@
+/* Extracted from landing-page-oman.html for v54_25 CSP hardening. */
+/* Landing page local refinements */
+.landing-oman-hero .hero-headline{font-family:var(--font-display);max-width:13ch}.landing-section-note{max-width:760px;margin:14px 0 0;color:var(--txt-sec);font-family:var(--font-body);font-size:.96rem;line-height:1.78}.landing-feature h3,.landing-note-card h3,.landing-mini-panel h3,.compare-step h3,.price-card h3,.landing-ad-panel h2,.landing-review-panel h2{font-family:var(--font-display)}.landing-feature p,.landing-note-card p,.landing-included-list li,.landing-check-card li,.compare-step p,.price-card p,.landing-lead,.landing-section-note{font-family:var(--font-body)}.lpo-section{padding:68px 0}.lpo-section .section-title{font-family:var(--font-display);font-size:clamp(30px,4vw,52px);line-height:1.04;letter-spacing:-1px}.lpo-head{max-width:820px;margin:0 0 32px;text-align:left}.lpo-head p{font-family:var(--font-body);font-size:17px;line-height:1.72;color:var(--txt-sec);margin:0}.lpo-demo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.lpo-demo-card{background:#09090c;border:1px solid rgba(255,255,255,.10);border-radius:30px;overflow:hidden;box-shadow:0 22px 70px rgba(0,0,0,.34);display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.lpo-demo-card:hover{transform:translateY(-4px);box-shadow:0 28px 82px rgba(0,0,0,.42);border-color:rgba(201,167,108,.28)}.lpo-demo-media{padding:14px 14px 0;background:radial-gradient(circle at top right,rgba(138,96,208,.16),transparent 42%),linear-gradient(180deg,rgba(14,14,20,.96),rgba(9,9,12,.96));border-bottom:1px solid rgba(255,255,255,.08)}.lpo-demo-browser{position:relative;height:256px;overflow:hidden;border:1px solid rgba(255,255,255,.10);border-bottom:0;border-radius:22px 22px 0 0;background:#050507;box-shadow:0 20px 55px rgba(0,0,0,.28)}.lpo-demo-browser::before{content:'';position:absolute;top:12px;left:14px;width:8px;height:8px;border-radius:50%;background:#ff7b72;box-shadow:16px 0 0 #f5c76e,32px 0 0 #6abf88;z-index:2;opacity:.95}.lpo-demo-browser::after{content:'';position:absolute;top:11px;left:64px;right:64px;height:10px;border-radius:999px;background:rgba(255,255,255,.08);z-index:2}.lpo-demo-frame{position:absolute;left:0;top:28px;width:1280px;height:900px;border:0;transform:translate(var(--preview-x,0px),var(--preview-y,0px)) scale(var(--preview-scale,.315));transform-origin:top left;pointer-events:none;background:#fff;transition:transform .35s ease,opacity .35s ease;opacity:.96}.lpo-demo-card:hover .lpo-demo-frame{transform:translate(var(--preview-x-hover,var(--preview-x,0px)),var(--preview-y-hover,var(--preview-y,0px))) scale(var(--preview-scale-hover,.322));opacity:1}.lpo-demo-card:nth-child(1){--preview-scale:.322;--preview-scale-hover:.33;--preview-x:-20px;--preview-y:-6px;--preview-x-hover:-24px;--preview-y-hover:-10px}.lpo-demo-card:nth-child(2){--preview-scale:.31;--preview-scale-hover:.318;--preview-x:-12px;--preview-y:-8px;--preview-x-hover:-16px;--preview-y-hover:-12px}.lpo-demo-card:nth-child(3){--preview-scale:.318;--preview-scale-hover:.326;--preview-x:-14px;--preview-y:-4px;--preview-x-hover:-18px;--preview-y-hover:-8px}.lpo-demo-card:nth-child(4){--preview-scale:.313;--preview-scale-hover:.321;--preview-x:-16px;--preview-y:-6px;--preview-x-hover:-20px;--preview-y-hover:-10px}.lpo-demo-card:nth-child(5){--preview-scale:.314;--preview-scale-hover:.322;--preview-x:-16px;--preview-y:-6px;--preview-x-hover:-20px;--preview-y-hover:-10px}.lpo-demo-card:nth-child(6){--preview-scale:.312;--preview-scale-hover:.32;--preview-x:-18px;--preview-y:-6px;--preview-x-hover:-22px;--preview-y-hover:-10px}.lpo-demo-body{padding:22px;font-family:var(--font-body),Inter,sans-serif;display:flex;flex-direction:column;flex:1}.lpo-demo-body h3{margin:0 0 8px;font-family:var(--font-body),Inter,sans-serif;font-size:22px;font-weight:700;color:var(--txt-primary);letter-spacing:-.01em}.lpo-demo-body p{margin:0 0 14px;font-family:var(--font-body),Inter,sans-serif;color:var(--txt-sec);min-height:78px;line-height:1.6}.lpo-demo-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}.lpo-demo-tags span{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);color:var(--txt-sec);font-family:var(--font-body),Inter,sans-serif;font-size:12px;font-weight:700}.lpo-demo-body .service-link{margin-top:auto;padding-top:18px;padding-bottom:2px;border:0;border-bottom:1px solid rgba(201,167,108,.45);border-radius:0;background:transparent;color:var(--gold);font-family:var(--font-label);font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.lpo-faq-wrap{max-width:980px;margin:0 auto;background:linear-gradient(145deg,rgba(18,18,24,.98),rgba(9,9,13,.98));border:1px solid rgba(255,255,255,.08);border-radius:28px;overflow:hidden;box-shadow:0 24px 76px rgba(0,0,0,.26)}.lpo-faq-item{border-bottom:1px solid rgba(255,255,255,.10);transition:background .25s ease}.lpo-faq-item:last-child{border-bottom:0}.lpo-faq-item.is-open{background:rgba(255,255,255,.018)}.lpo-faq-question{width:100%;border:0;background:transparent;color:#fff;text-align:left;cursor:pointer;padding:20px 58px 20px 26px;font-family:var(--font-label);font-weight:700;position:relative;font-size:15px;letter-spacing:.02em;line-height:1.45}.lpo-faq-question::after{content:'+';position:absolute;right:26px;top:50%;transform:translateY(-50%);font-size:25px;color:#fff;opacity:.82;font-weight:400;line-height:1;transition:transform .3s ease,opacity .3s ease}.lpo-faq-item.is-open .lpo-faq-question::after{content:'−';transform:translateY(-50%) rotate(180deg);opacity:1}.lpo-faq-answer{height:0;overflow:hidden;opacity:0;transition:height .55s cubic-bezier(.16,1,.3,1),opacity .36s ease}.lpo-faq-item.is-open .lpo-faq-answer{opacity:1}.lpo-faq-answer p{margin:0;padding:0 26px 22px;color:rgba(255,255,255,.72);font-family:var(--font-body);line-height:1.75}.landing-review-panel--single{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px}.landing-review-panel--single .btn-p{justify-self:end;white-space:nowrap}.landing-review-panel--single>div{min-width:0}@media(max-width:1100px){.lpo-demo-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.landing-review-panel--single{grid-template-columns:1fr}.landing-review-panel--single .btn-p{justify-self:start;white-space:normal}}@media(max-width:640px){.landing-oman-hero .hero-headline{max-width:11ch}.lpo-demo-grid{grid-template-columns:1fr}.lpo-demo-body p{min-height:auto}.lpo-section{padding:54px 0}.lpo-faq-question{padding:18px 52px 18px 20px}.lpo-faq-answer p{padding:0 20px 20px}}
+
+/* Landing page refinement: sans-serif system and layout polishing */
+body{--font-display:Inter,sans-serif;--font-body:"DM Sans",sans-serif;--font-label:Inter,sans-serif}
+.landing-oman-hero,.landing-oman-hero *:not(.lpo-demo-card *),main .content-section:not(#demo-pages),main .content-section:not(#demo-pages) *{font-family:Inter,sans-serif}
+.landing-oman-hero .hero-headline{font-family:Inter,sans-serif;max-width:12.5ch;line-height:.96;letter-spacing:-.065em;font-weight:700;margin-top:18px}
+.landing-oman-hero .hero-headline .h1-line{display:block;font-style:normal;font-family:Inter,sans-serif}
+.landing-oman-hero .hero-headline .h1-line--sub{font-size:.72em;line-height:1.08;letter-spacing:-.045em;color:var(--gold);font-weight:700;margin-top:8px}
+.landing-feature h3,.landing-note-card h3,.landing-mini-panel h3,.compare-step h3,.price-card h3,.landing-ad-panel h2,.landing-review-panel h2,.lpo-section .section-title{font-family:Inter,sans-serif;font-weight:600}
+.landing-mini-panel{display:flex;flex-direction:column;gap:14px}
+.landing-mini-panel h3{margin:0;font-family:Inter,sans-serif;font-weight:600;letter-spacing:-.035em}
+.landing-mini-panel p{max-width:620px;margin:0;color:var(--txt-sec)}
+.landing-link-use-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 10px;margin:4px 0 2px;padding:0;list-style:none}
+.landing-link-use-list li{position:relative;padding:10px 12px 10px 30px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:rgba(255,255,255,.035);color:var(--txt-primary);font-family:Inter,sans-serif;font-size:.92rem;line-height:1.25}
+.landing-link-use-list li:before{content:"";position:absolute;left:12px;top:50%;width:7px;height:7px;border-radius:50%;background:var(--gold);transform:translateY(-50%);box-shadow:0 0 14px rgba(201,167,108,.42)}
+.landing-compare-flow{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.compare-vs{display:none!important}
+.compare-step{min-height:0;padding:26px;border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border-color:rgba(255,255,255,.1);justify-content:flex-start;gap:20px;box-shadow:0 18px 56px rgba(0,0,0,.16)}
+.compare-step--active{background:linear-gradient(145deg,rgba(201,167,108,.14),rgba(138,96,208,.075),rgba(255,255,255,.026));border-color:rgba(201,167,108,.42);box-shadow:0 24px 70px rgba(201,167,108,.08),0 18px 56px rgba(0,0,0,.2)}
+.compare-step__top{display:block}
+.compare-step__num{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);color:var(--txt-sec);font-family:Inter,sans-serif;font-weight:700;letter-spacing:.13em}
+.compare-step h3{font-family:Inter,sans-serif;font-size:1.42rem;font-weight:700;letter-spacing:-.035em;margin:18px 0 10px}
+.compare-step p{font-family:Inter,sans-serif;font-size:.96rem;line-height:1.68;color:var(--txt-sec)}
+.compare-step__list{display:grid;gap:11px;margin:0;padding:0;list-style:none}
+.compare-step__list li{position:relative;padding-left:22px;color:rgba(255,255,255,.78);font-family:Inter,sans-serif;font-size:.92rem;line-height:1.45}
+.compare-step__list li:before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:rgba(201,167,108,.85)}
+.compare-step strong{margin-top:auto;font-family:Inter,sans-serif;letter-spacing:.13em}
+#demo-pages .lpo-demo-body{display:flex;flex-direction:column;flex:1;font-family:"DM Sans",Inter,sans-serif}
+#demo-pages .lpo-demo-body h3{font-family:Inter,sans-serif;font-weight:700;letter-spacing:-.02em}
+#demo-pages .lpo-demo-body p,#demo-pages .lpo-demo-tags span{font-family:"DM Sans",Inter,sans-serif}
+#demo-pages .lpo-demo-body .service-link{margin-top:auto;padding-top:22px;align-self:flex-start;font-family:Inter,sans-serif}
+#pricing{padding-top:44px}
+@media(max-width:900px){.landing-compare-flow{grid-template-columns:1fr}.landing-link-use-list{grid-template-columns:1fr}.landing-oman-hero .hero-headline{max-width:11.8ch}}
+
+/* Final landing typography and spacing refinements */
+.landing-oman-hero .hero-headline{font-family:Inter,sans-serif!important;font-weight:700!important}
+.landing-oman-hero .hero-headline .h1-line--main{color:var(--txt-primary)!important;font-weight:700!important}
+.landing-oman-hero .hero-headline .h1-line--sub{color:var(--accent-lite)!important;font-weight:700!important}
+main .content-section .section-title em,.landing-ad-panel h2 em,.landing-review-panel h2 em{color:var(--accent-lite)!important;font-style:normal!important;font-family:Inter,sans-serif!important;font-weight:700!important}
+main .content-section .section-title .no-break{white-space:nowrap}
+.landing-mini-panel .btn-p{align-self:center!important;text-align:center!important;display:inline-flex!important;justify-content:center!important;align-items:center!important;min-width:168px}
+@media(max-width:640px){.landing-mini-panel .btn-p{align-self:stretch!important;width:100%}}
+
+
+/* Final landing font balance: headings Inter, normal text DM Sans */
+.landing-oman-hero,.landing-oman-hero *:not(.btn-p):not(.btn-g),main .content-section,main .content-section *{font-family:var(--font-body)!important}
+.landing-oman-hero .hero-headline,.landing-oman-hero .hero-headline *,.lpo-section .section-title,.landing-ad-panel h2,.landing-review-panel h2,.landing-feature h3,.landing-note-card h3,.landing-mini-panel h3,.compare-step h3,.price-card h3,#demo-pages .lpo-demo-body h3,.lpo-faq-question,.btn-p,.btn-g,.label-tag{font-family:Inter,sans-serif!important}
+.landing-oman-hero .hero-headline,.landing-oman-hero .hero-headline .h1-line--main,.landing-oman-hero .hero-headline .h1-line--sub{font-weight:700!important}
+.lpo-section .section-title,.landing-ad-panel h2,.landing-review-panel h2{font-weight:600!important}
+.landing-feature h3,.landing-note-card h3,.landing-mini-panel h3,.compare-step h3,.price-card h3,#demo-pages .lpo-demo-body h3{font-weight:600!important}
+#demo-pages .lpo-demo-body p,#demo-pages .lpo-demo-tags span,.lpo-faq-answer p,.landing-link-use-list li{font-family:var(--font-body)!important}
+
+
+/* Pricing alignment and review meaning refinement */
+#pricing .pricing-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:stretch}
+#pricing .price-card{display:flex!important;flex-direction:column;min-height:520px;padding:26px 22px 22px;align-items:flex-start;overflow:hidden}
+#pricing .price-kicker{min-height:18px;margin-bottom:14px;font-size:.62rem;line-height:1.3;letter-spacing:.18em;white-space:normal}
+#pricing .price-card h3{min-height:54px;margin:0 0 14px;display:block;font-family:Inter,sans-serif!important;font-size:clamp(1.12rem,1.45vw,1.34rem);font-weight:600!important;line-height:1.14;letter-spacing:-.018em;color:var(--txt-primary)}
+#pricing .price-card .price{min-height:50px;margin:0 0 17px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;font-family:Inter,sans-serif!important;font-size:.95rem;line-height:1.2;color:var(--txt-primary)}
+#pricing .price-card .price em,#pricing .price-card .price .rz-no-italic{font-family:Inter,sans-serif!important;font-size:clamp(1.55rem,2.15vw,1.9rem);font-weight:500;font-style:normal;line-height:1;color:var(--accent-lite);white-space:nowrap}
+#pricing .price-card p{min-height:70px;margin:0 0 18px;font-family:var(--font-body)!important;font-size:.9rem;line-height:1.64;color:var(--txt-sec)}
+#pricing .price-card ul{flex:1;width:100%;margin:0 0 24px;padding:0;display:flex;flex-direction:column;gap:11px}
+#pricing .price-card li{display:grid;grid-template-columns:15px minmax(0,1fr);gap:9px;align-items:start;font-family:var(--font-body)!important;font-size:.88rem;line-height:1.58;color:var(--txt-sec);word-break:normal;overflow-wrap:normal;hyphens:none}
+#pricing .price-card li:before{margin:0;transform:none;top:0;position:relative;font-size:.95rem;line-height:1.45;color:var(--gold)}
+#pricing .price-card__cta{margin-top:auto;align-self:flex-start;white-space:nowrap;font-family:Inter,sans-serif!important;font-size:.58rem;font-weight:600!important;letter-spacing:.14em}
+@media(max-width:1180px){#pricing .pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#pricing .price-card{min-height:auto}#pricing .price-card h3,#pricing .price-card p{min-height:0}}
+@media(max-width:700px){#pricing .pricing-grid{grid-template-columns:1fr}}
+.landing-review-meaning{max-width:760px;margin:14px 0 0;color:var(--txt-sec);font-family:var(--font-body);font-size:.9rem;line-height:1.72}
+.landing-review-meaning strong{color:var(--txt-primary);font-weight:600}
+.landing-review-meaning a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,167,108,.45)}
+.landing-price-note{margin-top:24px;text-align:left;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.landing-price-note span{color:var(--txt-primary)}
+.landing-mini-panel .btn-p{align-self:center;justify-content:center;text-align:center;min-width:180px;margin-top:4px}
+@media(max-width:980px){#pricing .price-card{min-height:0}#pricing .price-card h3,#pricing .price-card .price,#pricing .price-card p{min-height:0}.landing-price-note{display:block;text-align:left}}
+
+/* v54_23 heading update: keep the new Landing Page Design and Optimization headline balanced */
+.landing-oman-hero .hero-headline{max-width:18.5ch!important}
+@media(max-width:640px){.landing-oman-hero .hero-headline{max-width:15ch!important}}
