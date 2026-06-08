@@ -1611,3 +1611,15 @@ button.btn-g:hover{
     gap:10px!important;
   }
 }
+
+/* Rozana v54.96 — mini website demo card mobile polish */
+@media (max-width:760px){
+  #demo-pages .lpo-demo-grid{gap:18px!important;}
+  #demo-pages .lpo-demo-card{border-radius:26px!important;}
+  #demo-pages .lpo-demo-media{padding:14px 14px 0!important;}
+  #demo-pages .lpo-demo-browser{height:224px!important;border-radius:20px 20px 0 0!important;}
+  #demo-pages .lpo-demo-body h3{font-size:21px!important;}
+  #demo-pages .lpo-demo-body p{line-height:1.6!important;}
+  #demo-pages .lpo-demo-points li{font-size:.88rem!important;}
+  #demo-pages .lpo-demo-body .service-link{min-height:36px!important;margin-top:8px!important;}
+}
