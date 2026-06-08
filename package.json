@@ -1,11 +1,16 @@
 {
   "name": "rozana-next-static-bridge",
-  "version": "54.91.0",
+  "version": "54.93.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "next build",
-    "start": "next start"
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/submit-indexnow.mjs",
+    "start": "next start",
+    "sitemap:generate": "node scripts/generate-sitemap.mjs",
+    "sitemap:submit": "node scripts/submit-indexnow.mjs",
+    "seo:refresh": "node scripts/generate-sitemap.mjs && node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "next": "15.5.19",

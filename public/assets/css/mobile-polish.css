@@ -1264,7 +1264,7 @@ button.btn-g{
 }
 
 
-/* Rozana v54.91 — mobile hero parity and CTA sizing hard lock.
+/* Rozana v54.93 — mobile hero parity and CTA sizing hard lock.
    Purpose: Landing Page Design mobile header must follow the same close copy-to-button rhythm as Services. */
 @media (max-width:960px){
   body.landing-page-oman-body .landing-oman-hero{
@@ -1409,5 +1409,205 @@ body .cta-panel > button.btn-p{
     max-width:100%!important;
     padding:13px 16px!important;
     white-space:normal!important;
+  }
+}
+
+/* Rozana v54.93 final mobile spacing + unified CTA system */
+.btn-p,
+a.btn-p,
+button.btn-p,
+#fSubmit,
+.nav__cta,
+.price-card__cta{
+  min-height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  padding:14px 24px!important;
+  border-radius:var(--r-sm,4px)!important;
+  font-family:var(--font-label,Inter,sans-serif)!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+  font-weight:700!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  text-align:center!important;
+  white-space:normal!important;
+}
+.btn-p,
+a.btn-p,
+button.btn-p,
+#fSubmit,
+.nav__cta{
+  color:var(--bg,#09090c)!important;
+  background:var(--txt-primary,#ede8df)!important;
+  border:1px solid var(--txt-primary,#ede8df)!important;
+}
+.btn-p:hover,
+a.btn-p:hover,
+button.btn-p:hover,
+#fSubmit:hover,
+.nav__cta:hover{
+  color:var(--bg,#09090c)!important;
+  background:var(--gold,#c9a76c)!important;
+  border-color:var(--gold,#c9a76c)!important;
+}
+.btn-g,
+a.btn-g,
+button.btn-g{
+  min-height:46px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  padding:13px 22px!important;
+  border-radius:var(--r-sm,4px)!important;
+  border:1px solid var(--border-lite,#28282f)!important;
+  color:var(--txt-sec,#7b7986)!important;
+  background:transparent!important;
+  font-family:var(--font-label,Inter,sans-serif)!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+  font-weight:700!important;
+  letter-spacing:.16em!important;
+  text-transform:uppercase!important;
+  text-align:center!important;
+  white-space:normal!important;
+}
+.btn-g:hover,
+a.btn-g:hover,
+button.btn-g:hover{
+  color:var(--txt-primary,#ede8df)!important;
+  border-color:var(--gold,#c9a76c)!important;
+  background:rgba(201,167,108,.08)!important;
+}
+.price-card__cta{
+  width:100%!important;
+  margin-top:auto!important;
+  color:var(--gold,#c9a76c)!important;
+  background:transparent!important;
+  border:1px solid rgba(201,167,108,.36)!important;
+}
+.price-card__cta:hover{
+  color:var(--bg,#09090c)!important;
+  background:var(--gold,#c9a76c)!important;
+  border-color:var(--gold,#c9a76c)!important;
+}
+.cta-panel > .btn-p,
+.cta-panel > a.btn-p,
+.cta-panel > button.btn-p{
+  min-width:168px!important;
+}
+@media (min-width:961px){
+  .hero-actions,
+  .page-actions{
+    gap:14px!important;
+  }
+  .hero-actions .btn-p,
+  .hero-actions .btn-g,
+  .page-actions .btn-p,
+  .page-actions .btn-g{
+    min-width:168px!important;
+  }
+  .nav__cta{
+    min-height:42px!important;
+    padding:12px 18px!important;
+  }
+}
+@media (max-width:960px){
+  .hero,
+  .page-hero,
+  header.hero,
+  header.page-hero,
+  .utility-hero,
+  .landing-oman-hero,
+  #home.hero{
+    min-height:auto!important;
+    padding-top:calc(86px + env(safe-area-inset-top))!important;
+    padding-bottom:30px!important;
+    display:flex!important;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+  }
+  .hero-content,
+  #home .hero-content,
+  .page-hero .hero-content,
+  .utility-hero .hero-content,
+  .landing-oman-hero .hero-content{
+    min-height:auto!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+  }
+  .page-hero .hero-bottom,
+  .landing-oman-hero .hero-bottom,
+  #home .hero-bottom,
+  .hero-bottom{
+    width:100%!important;
+    max-width:100%!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:12px!important;
+    margin-top:0!important;
+  }
+  .landing-oman-hero .hero-desc,
+  .page-hero .hero-desc,
+  #home .hero-desc,
+  .hero-desc{
+    margin:0!important;
+  }
+  .hero-actions,
+  .page-actions,
+  .landing-oman-hero .hero-actions,
+  #home .hero-actions{
+    width:100%!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:10px!important;
+    margin-top:0!important;
+  }
+  .hero-actions .btn-p,
+  .hero-actions .btn-g,
+  .page-actions .btn-p,
+  .page-actions .btn-g,
+  .landing-oman-hero .hero-actions .btn-p,
+  .landing-oman-hero .hero-actions .btn-g,
+  #home .hero-actions .btn-p,
+  #home .hero-actions .btn-g,
+  #fSubmit{
+    width:100%!important;
+    min-height:46px!important;
+    padding:13px 16px!important;
+  }
+  .hero-headline,
+  .page-hero .hero-headline,
+  .landing-oman-hero .hero-headline{
+    margin-bottom:14px!important;
+  }
+  .page-hero-line,
+  .hero-intel-effect{
+    margin-bottom:14px!important;
+  }
+}
+@media (max-width:640px){
+  .hero,
+  .page-hero,
+  header.hero,
+  header.page-hero,
+  .landing-oman-hero,
+  #home.hero{
+    padding-top:calc(80px + env(safe-area-inset-top))!important;
+    padding-bottom:28px!important;
+  }
+  .landing-oman-hero .hero-bottom,
+  .page-hero .hero-bottom,
+  #home .hero-bottom,
+  .hero-bottom{
+    gap:10px!important;
   }
 }
