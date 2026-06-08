@@ -1,6 +1,6 @@
 {
   "name": "rozana-next-static-bridge",
-  "version": "54.83.0",
+  "version": "54.84.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

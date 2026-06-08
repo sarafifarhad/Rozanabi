@@ -8,7 +8,7 @@ NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXXX
 NEXT_PUBLIC_GOOGLE_TOOLS_LOAD_MODE=gtm_preferred
 NEXT_PUBLIC_GOOGLE_TOOLS_DEBUG=false
 NEXT_PUBLIC_REQUIRE_COOKIE_CONSENT=true
-NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY=rz-cookie-consent-v54-83
+NEXT_PUBLIC_COOKIE_CONSENT_STORAGE_KEY=rz-cookie-consent-v54-84
 NEXT_PUBLIC_PRIMARY_DOMAIN=https://rozanabi.com
 NEXT_PUBLIC_WWW_DOMAIN=https://www.rozanabi.com
 
@@ -32,7 +32,7 @@ NEXT_PUBLIC_WWW_DOMAIN=https://www.rozanabi.com
 - Vercel > Project > Deployments > Redeploy.
 
 6) Browser testing:
-- Clear localStorage key rz-cookie-consent-v54-83 or open an incognito window.
+- Clear localStorage key rz-cookie-consent-v54-84 or open an incognito window.
 - Accept All.
 - Run in Console: RozanaAnalytics.status()
 - Check Network for gtm.js or gtag/js.

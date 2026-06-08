@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var COOKIE_KEY = (window.RZ_GOOGLE_TOOLS_CONFIG && window.RZ_GOOGLE_TOOLS_CONFIG.consentStorageKey) || 'rz-cookie-consent-v54-83';
+  var COOKIE_KEY = (window.RZ_GOOGLE_TOOLS_CONFIG && window.RZ_GOOGLE_TOOLS_CONFIG.consentStorageKey) || 'rz-cookie-consent-v54-84';
   var VERSION = 'v54.76';
 
   var bannerHtml = '' +
