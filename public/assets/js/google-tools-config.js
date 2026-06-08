@@ -14,7 +14,7 @@
 
     // Consent-aware loading. Google tags are prepared on every page, but analytics/ads storage
     // only becomes active after Accept All or saved preferences with the related category enabled.
-    consentStorageKey: 'rz-cookie-consent-v54-80',
+    consentStorageKey: 'rz-cookie-consent-v54-83',
     requireCookieConsent: true,
     loadMode: 'gtm_preferred', // gtm_preferred | ga4_only | disabled
     debug: false

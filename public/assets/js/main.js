@@ -93,12 +93,13 @@ function initDataScroll(){
     el.addEventListener('click',e=>{
       const id=el.getAttribute('data-scroll-target');
       const target=id ? document.getElementById(id) : null;
-      if(!target)return;
       e.preventDefault();
+      if(!target)return;
       target.scrollIntoView({behavior:'smooth',block:'start'});
       try{
         if(window.history && window.history.replaceState){
-          window.history.replaceState(null, document.title, window.location.pathname + window.location.search);
+          const cleanUrl=(window.location.pathname||'/') + (window.location.search||'');
+          window.history.replaceState(null, document.title, cleanUrl);
         }
       }catch(err){}
     });
@@ -669,7 +670,7 @@ function initCookie(){
   const accept=document.getElementById('cookieAccept');
   const reject=document.getElementById('cookieReject');
   const close=document.getElementById('cookieClose');
-  const COOKIE_KEY='rz-cookie-consent-v54-80';
+  const COOKIE_KEY='rz-cookie-consent-v54-83';
 
   const readStored=()=>{
     try{
@@ -1010,7 +1011,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         var save = document.getElementById('cookieSave');
         if(!banner) return;
         try{
-          var raw = localStorage.getItem('rz-cookie-consent-v54-80');
+          var raw = localStorage.getItem('rz-cookie-consent-v54-83');
           var existing = raw ? JSON.parse(raw) : null;
           var analytics = document.getElementById('cookieAnalytics');
           var marketing = document.getElementById('cookieMarketing');

@@ -76,7 +76,7 @@ export default function NotFound() {
             Back to Home
           </a>
           <a
-            href="/contact#contact"
+            href="/contact"
             style={{
               borderRadius: '999px',
               padding: '13px 20px',

@@ -501,3 +501,158 @@
   font-weight:800!important;
   letter-spacing:.10em!important;
 }
+
+
+/* Rozana v54.83 final mobile interaction corrections */
+/* Mobile menu: keep the layout stable and add a visible colored stepped light effect. */
+@media (max-width:960px){
+  .mobile-menu.open .mm-link{
+    --rz-step-glow: rgba(166,127,230,.52);
+    opacity:1!important;
+    transform:none!important;
+    position:relative!important;
+    overflow:hidden!important;
+    animation:rzMenuColorPulse .92s cubic-bezier(.16,1,.3,1) both!important;
+    background:linear-gradient(90deg,rgba(255,255,255,.018),rgba(255,255,255,0) 58%)!important;
+    transition:color .24s ease, background .24s ease, text-shadow .24s ease!important;
+  }
+  .mobile-menu.open .mm-link:nth-child(1){--rz-step-glow:rgba(201,167,108,.64);animation-delay:.04s!important;}
+  .mobile-menu.open .mm-link:nth-child(2){--rz-step-glow:rgba(166,127,230,.62);animation-delay:.13s!important;}
+  .mobile-menu.open .mm-link:nth-child(3){--rz-step-glow:rgba(91,141,217,.58);animation-delay:.22s!important;}
+  .mobile-menu.open .mm-link:nth-child(4){--rz-step-glow:rgba(106,191,136,.54);animation-delay:.31s!important;}
+  .mobile-menu.open .mm-link:nth-child(5){--rz-step-glow:rgba(201,167,108,.58);animation-delay:.40s!important;}
+  .mobile-menu.open .mm-link:nth-child(6){--rz-step-glow:rgba(166,127,230,.60);animation-delay:.49s!important;}
+  .mobile-menu.open .mm-link:nth-child(7){--rz-step-glow:rgba(255,255,255,.52);animation-delay:.58s!important;}
+  .mobile-menu.open .mm-link::before{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    top:50%!important;
+    width:42px!important;
+    height:2px!important;
+    margin:0!important;
+    border-radius:999px!important;
+    transform:translateY(-50%) scaleX(0)!important;
+    transform-origin:left center!important;
+    background:linear-gradient(90deg,var(--rz-step-glow),rgba(255,255,255,.72),transparent)!important;
+    box-shadow:0 0 18px var(--rz-step-glow),0 0 42px var(--rz-step-glow)!important;
+    opacity:0!important;
+    animation:rzMenuLightBar .82s cubic-bezier(.16,1,.3,1) both!important;
+    animation-delay:inherit!important;
+  }
+  .mobile-menu.open .mm-link::after{
+    content:""!important;
+    position:absolute!important;
+    inset:6px -16px 6px 0!important;
+    border-radius:18px!important;
+    background:radial-gradient(circle at 4% 50%,var(--rz-step-glow),transparent 44%)!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    animation:rzMenuSoftWash .82s ease both!important;
+    animation-delay:inherit!important;
+  }
+  .mobile-menu.open .mm-link:hover,
+  .mobile-menu.open .mm-link:focus-visible{
+    color:#fff!important;
+    text-shadow:0 0 18px var(--rz-step-glow)!important;
+    background:linear-gradient(90deg,rgba(255,255,255,.052),rgba(255,255,255,0) 66%)!important;
+  }
+  .mobile-menu.open .mm-link:hover::before,
+  .mobile-menu.open .mm-link:focus-visible::before{
+    transform:translateY(-50%) scaleX(1)!important;
+    opacity:1!important;
+  }
+}
+@keyframes rzMenuColorPulse{
+  0%{color:rgba(237,232,223,.54);text-shadow:none;background-color:transparent;}
+  45%{color:#fff;text-shadow:0 0 22px var(--rz-step-glow);background-color:rgba(255,255,255,.028);}
+  100%{color:var(--txt-primary);text-shadow:0 0 0 transparent;background-color:transparent;}
+}
+@keyframes rzMenuLightBar{
+  0%{opacity:0;transform:translateY(-50%) scaleX(0);}
+  35%{opacity:1;transform:translateY(-50%) scaleX(1);}
+  100%{opacity:.2;transform:translateY(-50%) scaleX(.16);}
+}
+@keyframes rzMenuSoftWash{
+  0%{opacity:0;transform:translateX(-18px);}
+  42%{opacity:.42;transform:translateX(0);}
+  100%{opacity:.04;transform:translateX(12px);}
+}
+
+/* Contact hero scroll button: button element should look identical to links. */
+button.btn-p,button.btn-g{
+  border:0;
+  cursor:pointer;
+  font:inherit;
+}
+
+/* Home mobile: return the hero copy to the original left-aligned placement. */
+@media (max-width:960px){
+  #home .hero-content,
+  #home .container.hero-content{
+    align-items:flex-start!important;
+    text-align:left!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  #home .hero-eyebrow{
+    justify-content:flex-start!important;
+    align-items:center!important;
+    width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  #home .hero-headline{
+    text-align:left!important;
+    margin-left:0!important;
+    margin-right:auto!important;
+    max-width:min(100%, 24.5rem)!important;
+  }
+  #home .hero-headline .line{
+    text-align:left!important;
+  }
+  #home .hero-intel-effect{
+    margin-left:0!important;
+    margin-right:auto!important;
+  }
+  #home .hero-bottom{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    text-align:left!important;
+    margin-left:0!important;
+    margin-right:auto!important;
+    max-width:34rem!important;
+  }
+  #home .hero-desc{
+    text-align:left!important;
+    margin-left:0!important;
+    margin-right:auto!important;
+  }
+  #home .hero-actions{
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+  }
+}
+
+/* Landing Page Design mobile header buttons: same compact mobile rhythm as other page headers. */
+@media (max-width:960px){
+  .landing-oman-hero .hero-bottom{
+    gap:12px!important;
+  }
+  .landing-oman-hero .hero-actions{
+    width:100%!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:10px!important;
+    margin-top:0!important;
+  }
+  .landing-oman-hero .hero-actions .btn-p,
+  .landing-oman-hero .hero-actions .btn-g{
+    width:100%!important;
+    min-height:46px!important;
+    justify-content:center!important;
+    text-align:center!important;
+    padding:13px 16px!important;
+  }
+}
