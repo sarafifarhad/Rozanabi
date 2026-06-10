@@ -1,4 +1,4 @@
-# ROZANA v54.98 — Afrooz Mini Website Sample Inserted
+# ROZANA v55.00 — Afrooz Mini Website Sample Inserted
 
 ## Summary
 The uploaded Afrooz mini website sample was inserted into the Rozana project and connected to the **Afrooz Perfumes** card inside the **Mini Website Demos** section.
@@ -16,7 +16,7 @@ The uploaded Afrooz mini website sample was inserted into the Rozana project and
 - Added a back link to return to:
   - `/landing-page-oman#demo-pages`
 - Replaced the Afrooz preview card image with a new preview generated from the inserted sample style.
-- Updated internal version references to `54.98.0`.
+- Updated internal version references to `55.00.0`.
 
 ## Route
 The existing clean route remains active:

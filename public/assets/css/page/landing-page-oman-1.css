@@ -79,7 +79,7 @@ main .content-section .section-title .no-break{white-space:nowrap}
 .landing-oman-hero .hero-headline{max-width:18.5ch!important}
 @media(max-width:640px){.landing-oman-hero .hero-headline{max-width:15ch!important}}
 
-/* Rozana v54.98 — refined mini-website demo cards */
+/* Rozana v55.00 — refined mini-website demo cards */
 #demo-pages .lpo-demo-grid{gap:22px}
 #demo-pages .lpo-demo-card{position:relative;background:linear-gradient(180deg,rgba(12,12,18,.98),rgba(8,8,12,.98));border:1px solid rgba(255,255,255,.09);border-radius:32px;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.34)}
 #demo-pages .lpo-demo-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--demo-accent,#8a60d0),var(--demo-accent-soft,#c9a76c));opacity:.95;z-index:2}
@@ -120,7 +120,7 @@ main .content-section .section-title .no-break{white-space:nowrap}
   #demo-pages .lpo-demo-kicker{font-size:.61rem}
 }
 
-/* Rozana v54.98 — ultra-minimal demo cards, aligned CTAs */
+/* Rozana v55.00 — ultra-minimal demo cards, aligned CTAs */
 #demo-pages .lpo-demo-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;align-items:stretch!important;grid-auto-rows:1fr!important;}
 #demo-pages .lpo-demo-card{height:100%!important;background:#0b0b0f!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:28px!important;box-shadow:none!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;transition:transform .22s ease,border-color .22s ease!important;}
 #demo-pages .lpo-demo-card:hover{transform:translateY(-3px)!important;box-shadow:none!important;border-color:rgba(255,255,255,.18)!important;}
@@ -154,3 +154,176 @@ main .content-section .section-title .no-break{white-space:nowrap}
 #demo-pages .lpo-demo-card:nth-child(12){--demo-accent-soft:#d9e0f8;}
 @media(max-width:1100px){#demo-pages .lpo-demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
 @media(max-width:640px){#demo-pages .lpo-demo-grid{grid-template-columns:1fr!important;}#demo-pages .lpo-demo-browser{height:218px!important;}#demo-pages .lpo-demo-body{min-height:auto!important;padding:20px!important;}#demo-pages .lpo-demo-body p{min-height:auto!important;}#demo-pages .lpo-demo-body .service-link{margin-top:18px!important;}}
+
+
+/* Rozana v55.00 — Mini Website demo CTA button sizing fix */
+#demo-pages .lpo-demo-body{
+  display:flex!important;
+  flex-direction:column!important;
+}
+#demo-pages .lpo-demo-body .service-link{
+  width:188px!important;
+  max-width:100%!important;
+  min-width:188px!important;
+  min-height:40px!important;
+  height:40px!important;
+  align-self:center!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin-top:auto!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding:0 18px!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  border-radius:14px!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.035))!important;
+  color:#fff!important;
+  box-shadow:none!important;
+  font-family:var(--font-label)!important;
+  font-size:10px!important;
+  font-weight:700!important;
+  letter-spacing:.13em!important;
+  line-height:1!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+#demo-pages .lpo-demo-body .service-link::after{
+  content:""!important;
+  display:none!important;
+}
+#demo-pages .lpo-demo-body .service-link:hover,
+#demo-pages .lpo-demo-body .service-link:focus-visible{
+  background:#ffffff!important;
+  color:#09090c!important;
+  border-color:#ffffff!important;
+  transform:translateY(-1px)!important;
+}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-body .service-link{
+    width:180px!important;
+    min-width:180px!important;
+    height:40px!important;
+    min-height:40px!important;
+    margin-top:18px!important;
+    padding:0 16px!important;
+    border-radius:13px!important;
+    font-size:9.5px!important;
+    letter-spacing:.12em!important;
+  }
+}
+
+/* Rozana v55.00 — card previews now use exact screenshots from the real demo pages */
+#demo-pages .lpo-demo-card{
+  background:#0b0b0f!important;
+  border:1px solid rgba(255,255,255,.09)!important;
+  border-radius:28px!important;
+  box-shadow:none!important;
+}
+#demo-pages .lpo-demo-media{
+  padding:12px!important;
+  background:#0b0b0f!important;
+  border-bottom:1px solid rgba(255,255,255,.07)!important;
+}
+#demo-pages .lpo-demo-browser{
+  height:252px!important;
+  border:1px solid rgba(255,255,255,.09)!important;
+  border-radius:20px!important;
+  overflow:hidden!important;
+  background:#0b0b0f!important;
+  box-shadow:none!important;
+}
+#demo-pages .lpo-demo-browser::before,
+#demo-pages .lpo-demo-browser::after{
+  display:none!important;
+}
+#demo-pages .lpo-demo-browser .lpo-demo-preview-img,
+.lpo-demo-browser .lpo-demo-preview-img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  transform:none!important;
+  opacity:1!important;
+  filter:none!important;
+  background:#0b0b0f!important;
+}
+#demo-pages .lpo-demo-card:hover .lpo-demo-preview-img,
+.lpo-demo-card:hover .lpo-demo-preview-img{
+  transform:none!important;
+  filter:none!important;
+  opacity:1!important;
+}
+#demo-pages .lpo-demo-body{
+  min-height:330px!important;
+  padding:22px!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+#demo-pages .lpo-demo-body p{
+  min-height:74px!important;
+  margin:0!important;
+}
+#demo-pages .lpo-demo-meta{
+  margin:16px 0 12px!important;
+}
+#demo-pages .lpo-demo-info{
+  display:grid!important;
+  gap:7px!important;
+  margin:0 0 18px!important;
+  padding:14px!important;
+  border:1px solid rgba(255,255,255,.075)!important;
+  border-radius:16px!important;
+  background:rgba(255,255,255,.028)!important;
+}
+#demo-pages .lpo-demo-info span{
+  display:block!important;
+  color:rgba(255,255,255,.66)!important;
+  font-family:var(--font-body)!important;
+  font-size:12.5px!important;
+  line-height:1.45!important;
+}
+#demo-pages .lpo-demo-info b{
+  color:rgba(255,255,255,.9)!important;
+  font-family:var(--font-label)!important;
+  font-size:10.5px!important;
+  letter-spacing:.12em!important;
+  text-transform:uppercase!important;
+  margin-right:6px!important;
+}
+#demo-pages .lpo-demo-body .service-link{
+  width:190px!important;
+  min-width:190px!important;
+  height:40px!important;
+  min-height:40px!important;
+  margin-top:auto!important;
+  align-self:center!important;
+  border-radius:13px!important;
+}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-browser{height:226px!important;border-radius:18px!important;}
+  #demo-pages .lpo-demo-body{min-height:auto!important;padding:20px!important;}
+  #demo-pages .lpo-demo-body p{min-height:auto!important;}
+  #demo-pages .lpo-demo-info{margin-bottom:18px!important;}
+  #demo-pages .lpo-demo-body .service-link{width:184px!important;min-width:184px!important;}
+}
+
+/* Rozana v55.00 — preserve exact screenshot aspect ratio on demo cards */
+#demo-pages .lpo-demo-browser{
+  aspect-ratio:10/7!important;
+  height:auto!important;
+}
+#demo-pages .lpo-demo-browser .lpo-demo-preview-img{
+  object-fit:cover!important;
+  object-position:top center!important;
+}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-browser{
+    aspect-ratio:10/7!important;
+    height:auto!important;
+  }
+}

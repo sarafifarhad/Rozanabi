@@ -1264,7 +1264,7 @@ button.btn-g{
 }
 
 
-/* Rozana v54.98 — mobile hero parity and CTA sizing hard lock.
+/* Rozana v55.00 — mobile hero parity and CTA sizing hard lock.
    Purpose: Landing Page Design mobile header must follow the same close copy-to-button rhythm as Services. */
 @media (max-width:960px){
   body.landing-page-oman-body .landing-oman-hero{
@@ -1412,7 +1412,7 @@ body .cta-panel > button.btn-p{
   }
 }
 
-/* Rozana v54.98 final mobile spacing + unified CTA system */
+/* Rozana v55.00 final mobile spacing + unified CTA system */
 .btn-p,
 a.btn-p,
 button.btn-p,
@@ -1612,7 +1612,7 @@ button.btn-g:hover{
   }
 }
 
-/* Rozana v54.98 — mini website demo card mobile polish */
+/* Rozana v55.00 — mini website demo card mobile polish */
 @media (max-width:760px){
   #demo-pages .lpo-demo-grid{gap:18px!important;}
   #demo-pages .lpo-demo-card{border-radius:26px!important;}
@@ -1622,4 +1622,96 @@ button.btn-g:hover{
   #demo-pages .lpo-demo-body p{line-height:1.6!important;}
   #demo-pages .lpo-demo-points li{font-size:.88rem!important;}
   #demo-pages .lpo-demo-body .service-link{min-height:36px!important;margin-top:8px!important;}
+}
+
+
+/* Rozana v55.00 — Mini Website demo CTA button sizing fix */
+#demo-pages .lpo-demo-body{
+  display:flex!important;
+  flex-direction:column!important;
+}
+#demo-pages .lpo-demo-body .service-link{
+  width:188px!important;
+  max-width:100%!important;
+  min-width:188px!important;
+  min-height:40px!important;
+  height:40px!important;
+  align-self:center!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  margin-top:auto!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding:0 18px!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  border-radius:14px!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.035))!important;
+  color:#fff!important;
+  box-shadow:none!important;
+  font-family:var(--font-label)!important;
+  font-size:10px!important;
+  font-weight:700!important;
+  letter-spacing:.13em!important;
+  line-height:1!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+#demo-pages .lpo-demo-body .service-link::after{
+  content:""!important;
+  display:none!important;
+}
+#demo-pages .lpo-demo-body .service-link:hover,
+#demo-pages .lpo-demo-body .service-link:focus-visible{
+  background:#ffffff!important;
+  color:#09090c!important;
+  border-color:#ffffff!important;
+  transform:translateY(-1px)!important;
+}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-body .service-link{
+    width:180px!important;
+    min-width:180px!important;
+    height:40px!important;
+    min-height:40px!important;
+    margin-top:18px!important;
+    padding:0 16px!important;
+    border-radius:13px!important;
+    font-size:9.5px!important;
+    letter-spacing:.12em!important;
+  }
+}
+
+/* Rozana v55.00 — mobile parity for real demo screenshot cards */
+.lpo-demo-browser .lpo-demo-preview-img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  transform:none!important;
+  opacity:1!important;
+  filter:none!important;
+}
+.lpo-demo-browser::before,.lpo-demo-browser::after{display:none!important;}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-browser{height:226px!important;border-radius:18px!important;}
+  #demo-pages .lpo-demo-info{display:grid!important;gap:7px!important;margin:0 0 18px!important;padding:13px!important;border:1px solid rgba(255,255,255,.075)!important;border-radius:15px!important;background:rgba(255,255,255,.028)!important;}
+  #demo-pages .lpo-demo-info span{display:block!important;color:rgba(255,255,255,.66)!important;font-family:var(--font-body)!important;font-size:12px!important;line-height:1.42!important;}
+  #demo-pages .lpo-demo-info b{color:rgba(255,255,255,.9)!important;font-family:var(--font-label)!important;font-size:10px!important;letter-spacing:.1em!important;text-transform:uppercase!important;margin-right:5px!important;}
+}
+
+/* Rozana v55.00 — preserve exact screenshot aspect ratio on mobile cards */
+#demo-pages .lpo-demo-browser{
+  aspect-ratio:10/7!important;
+  height:auto!important;
+}
+@media(max-width:760px){
+  #demo-pages .lpo-demo-browser{
+    aspect-ratio:10/7!important;
+    height:auto!important;
+  }
 }
