@@ -79,7 +79,7 @@ main .content-section .section-title .no-break{white-space:nowrap}
 .landing-oman-hero .hero-headline{max-width:18.5ch!important}
 @media(max-width:640px){.landing-oman-hero .hero-headline{max-width:15ch!important}}
 
-/* Rozana v54.97 — refined mini-website demo cards */
+/* Rozana v54.98 — refined mini-website demo cards */
 #demo-pages .lpo-demo-grid{gap:22px}
 #demo-pages .lpo-demo-card{position:relative;background:linear-gradient(180deg,rgba(12,12,18,.98),rgba(8,8,12,.98));border:1px solid rgba(255,255,255,.09);border-radius:32px;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.34)}
 #demo-pages .lpo-demo-card::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--demo-accent,#8a60d0),var(--demo-accent-soft,#c9a76c));opacity:.95;z-index:2}
@@ -120,7 +120,7 @@ main .content-section .section-title .no-break{white-space:nowrap}
   #demo-pages .lpo-demo-kicker{font-size:.61rem}
 }
 
-/* Rozana v54.97 — ultra-minimal demo cards, aligned CTAs */
+/* Rozana v54.98 — ultra-minimal demo cards, aligned CTAs */
 #demo-pages .lpo-demo-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;align-items:stretch!important;grid-auto-rows:1fr!important;}
 #demo-pages .lpo-demo-card{height:100%!important;background:#0b0b0f!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:28px!important;box-shadow:none!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;transition:transform .22s ease,border-color .22s ease!important;}
 #demo-pages .lpo-demo-card:hover{transform:translateY(-3px)!important;box-shadow:none!important;border-color:rgba(255,255,255,.18)!important;}

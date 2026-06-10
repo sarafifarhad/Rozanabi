@@ -1,4 +1,4 @@
-# ROZANA v54.97 — Minimal Demo Cards Refinement
+# ROZANA v54.98 — Minimal Demo Cards Refinement
 
 ## Summary
 This update simplifies the mini website demo cards and removes the cluttered card structure.
@@ -10,8 +10,8 @@ This update simplifies the mini website demo cards and removes the cluttered car
 - Kept the real estate demo preview unchanged because that direction was approved.
 - Aligned all `Open Mini Website` CTAs to the bottom of each card using flex layout and explicit card body rules.
 - Added final CSS overrides for desktop, tablet and mobile card consistency.
-- Updated cache-busting references to `54.97`.
-- Updated package version to `54.97.0`.
+- Updated cache-busting references to `54.98`.
+- Updated package version to `54.98.0`.
 
 ## Design direction
 The demo cards now use a simpler, modern, minimal presentation inspired by polished website-builder showcase patterns, while staying focused on mini website needs rather than full website content.
