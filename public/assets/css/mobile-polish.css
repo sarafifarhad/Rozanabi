@@ -1715,3 +1715,23 @@ button.btn-g:hover{
     height:auto!important;
   }
 }
+
+
+/* Rozana v55.06 — exact screenshot previews on mobile */
+#demo-pages .lpo-demo-browser{
+  aspect-ratio:10/7!important;
+  height:auto!important;
+}
+#demo-pages .lpo-demo-browser::before,
+#demo-pages .lpo-demo-browser::after{
+  display:none!important;
+  content:none!important;
+}
+#demo-pages .lpo-demo-browser .lpo-demo-preview-img,
+#demo-pages .lpo-demo-preview-img{
+  object-fit:contain!important;
+  object-position:center center!important;
+  transform:none!important;
+  filter:none!important;
+  opacity:1!important;
+}
