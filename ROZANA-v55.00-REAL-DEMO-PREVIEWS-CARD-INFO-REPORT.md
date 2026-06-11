@@ -1,4 +1,4 @@
-# ROZANA v55.00 — Real Demo Previews + Complete Card Information
+# ROZANA v55.01 — Real Demo Previews + Complete Card Information
 
 ## Summary
 Updated the Mini Website Demos section so each card preview image represents the actual demo page view, rather than a separate decorative mockup.
@@ -13,7 +13,7 @@ Updated the Mini Website Demos section so each card preview image represents the
   - core actions
   - included mini-site elements
 - Kept all `Open Mini Website` CTAs aligned at the bottom of the cards.
-- Updated cache-busting references and package version to `55.00.0`.
+- Updated cache-busting references and package version to `55.01.0`.
 
 ## Preview files regenerated
 - `public/assets/images/demo-previews/demo-afrooz-preview.png`

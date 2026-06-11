@@ -1264,7 +1264,7 @@ button.btn-g{
 }
 
 
-/* Rozana v55.00 — mobile hero parity and CTA sizing hard lock.
+/* Rozana v55.01 — mobile hero parity and CTA sizing hard lock.
    Purpose: Landing Page Design mobile header must follow the same close copy-to-button rhythm as Services. */
 @media (max-width:960px){
   body.landing-page-oman-body .landing-oman-hero{
@@ -1412,7 +1412,7 @@ body .cta-panel > button.btn-p{
   }
 }
 
-/* Rozana v55.00 final mobile spacing + unified CTA system */
+/* Rozana v55.01 final mobile spacing + unified CTA system */
 .btn-p,
 a.btn-p,
 button.btn-p,
@@ -1612,7 +1612,7 @@ button.btn-g:hover{
   }
 }
 
-/* Rozana v55.00 — mini website demo card mobile polish */
+/* Rozana v55.01 — mini website demo card mobile polish */
 @media (max-width:760px){
   #demo-pages .lpo-demo-grid{gap:18px!important;}
   #demo-pages .lpo-demo-card{border-radius:26px!important;}
@@ -1625,7 +1625,7 @@ button.btn-g:hover{
 }
 
 
-/* Rozana v55.00 — Mini Website demo CTA button sizing fix */
+/* Rozana v55.01 — Mini Website demo CTA button sizing fix */
 #demo-pages .lpo-demo-body{
   display:flex!important;
   flex-direction:column!important;
@@ -1683,7 +1683,7 @@ button.btn-g:hover{
   }
 }
 
-/* Rozana v55.00 — mobile parity for real demo screenshot cards */
+/* Rozana v55.01 — mobile parity for real demo screenshot cards */
 .lpo-demo-browser .lpo-demo-preview-img{
   position:absolute!important;
   inset:0!important;
@@ -1704,7 +1704,7 @@ button.btn-g:hover{
   #demo-pages .lpo-demo-info b{color:rgba(255,255,255,.9)!important;font-family:var(--font-label)!important;font-size:10px!important;letter-spacing:.1em!important;text-transform:uppercase!important;margin-right:5px!important;}
 }
 
-/* Rozana v55.00 — preserve exact screenshot aspect ratio on mobile cards */
+/* Rozana v55.01 — preserve exact screenshot aspect ratio on mobile cards */
 #demo-pages .lpo-demo-browser{
   aspect-ratio:10/7!important;
   height:auto!important;

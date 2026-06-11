@@ -1,4 +1,4 @@
-# ROZANA v55.00 — Mini Website Demo CTA Button Fix
+# ROZANA v55.01 — Mini Website Demo CTA Button Fix
 
 ## Summary
 Adjusted the `Open Mini Website` buttons inside the Mini Website Demos card grid.
@@ -9,4 +9,4 @@ Adjusted the `Open Mini Website` buttons inside the Mini Website Demos card grid
 - Changed the radius from oversized pill to a more refined 14px rounded rectangle.
 - Centered all `Open Mini Website` buttons while preserving bottom alignment across cards.
 - Added hover/focus state with clean white contrast.
-- Updated cache-busting references to `55.00`.
+- Updated cache-busting references to `55.01`.

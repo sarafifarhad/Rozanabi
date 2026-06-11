@@ -2,7 +2,7 @@
   'use strict';
 
   var COOKIE_KEY = (window.RZ_GOOGLE_TOOLS_CONFIG && window.RZ_GOOGLE_TOOLS_CONFIG.consentStorageKey) || 'rz-cookie-consent';
-  var VERSION = 'v55.00';
+  var VERSION = 'v55.01';
 
   var bannerHtml = '' +
     '<aside aria-label="Cookie preferences" aria-live="polite" class="cookie" id="cookieBanner" role="dialog">' +
