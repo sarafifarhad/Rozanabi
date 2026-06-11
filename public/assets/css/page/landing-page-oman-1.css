@@ -329,14 +329,14 @@ main .content-section .section-title .no-break{white-space:nowrap}
 }
 
 
-/* Rozana v55.08 — final uniform screenshot preview sync for all Landing Page Website cards */
+/* Rozana v55.09 — final uniform screenshot preview sync for all Landing Page Website cards */
 #demo-pages .lpo-demo-browser{aspect-ratio:10/7!important;height:auto!important;overflow:hidden!important;background:#0b0b0f!important;}
 #demo-pages .lpo-demo-browser::before,#demo-pages .lpo-demo-browser::after{display:none!important;}
 #demo-pages .lpo-demo-preview-img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:top center!important;transform:none!important;filter:none!important;opacity:1!important;background:#0b0b0f!important;}
 #demo-pages .lpo-demo-card:hover .lpo-demo-preview-img{transform:none!important;filter:none!important;opacity:1!important;}
 
 
-/* Rozana v55.08 — exact screenshot previews for all Landing Page Website cards */
+/* Rozana v55.09 — exact screenshot previews for all Landing Page Website cards */
 #demo-pages .lpo-demo-browser{
   aspect-ratio:10/7!important;
   height:auto!important;
@@ -367,4 +367,52 @@ main .content-section .section-title .no-break{white-space:nowrap}
   transform:none!important;
   filter:none!important;
   opacity:1!important;
+}
+
+
+/* Rozana v55.09 — Landing Page Website cards use the same clean screenshot treatment as Afrooz */
+#demo-pages .lpo-demo-media{
+  padding:14px 14px 0!important;
+  background:linear-gradient(180deg,rgba(14,14,20,.96),rgba(9,9,12,.96))!important;
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+}
+#demo-pages .lpo-demo-browser{
+  position:relative!important;
+  aspect-ratio:10/7!important;
+  height:auto!important;
+  overflow:hidden!important;
+  border:1px solid rgba(255,255,255,.08)!important;
+  border-bottom:0!important;
+  border-radius:22px 22px 0 0!important;
+  background:#0b0b10!important;
+  box-shadow:none!important;
+}
+#demo-pages .lpo-demo-browser::before,
+#demo-pages .lpo-demo-browser::after{
+  display:none!important;
+  content:none!important;
+}
+#demo-pages .lpo-demo-browser .lpo-demo-preview-img{
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+  transform:none!important;
+  transform-origin:center center!important;
+  filter:none!important;
+  opacity:1!important;
+  pointer-events:none!important;
+  background:#0b0b10!important;
+}
+#demo-pages .lpo-demo-card:hover .lpo-demo-preview-img{
+  transform:none!important;
+  filter:none!important;
+  opacity:1!important;
+}
+@media (max-width:640px){
+  #demo-pages .lpo-demo-browser{border-radius:18px 18px 0 0!important;}
 }
