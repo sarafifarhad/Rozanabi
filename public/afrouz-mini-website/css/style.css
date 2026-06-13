@@ -1927,3 +1927,125 @@ body.modal-open {
     font-size: 10px !important;
   }
 }
+
+
+/* Rozana v55.20 — Afrooz mobile WhatsApp button and product detail image fix */
+@media (max-width: 760px) {
+  .product-modal__image-wrap {
+    width: 100% !important;
+    height: 245px !important;
+    min-height: 245px !important;
+    padding: 0 !important;
+    display: block !important;
+    border-radius: 18px 18px 0 0 !important;
+    background: #dfe7e6 !important;
+    overflow: hidden !important;
+  }
+  .product-modal__image-wrap img,
+  #modalProductImage {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    border-radius: 0 !important;
+    display: block !important;
+  }
+  .product-modal__actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+    margin-top: 10px !important;
+  }
+  .product-modal__actions .btn,
+  #modalWhatsApp {
+    width: 100% !important;
+    min-height: 44px !important;
+    height: auto !important;
+    padding: 11px 14px !important;
+    border-radius: 10px !important;
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+    letter-spacing: .08em !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  #modalWhatsApp svg {
+    width: 16px !important;
+    height: 16px !important;
+    flex: 0 0 16px !important;
+  }
+}
+@media (max-width: 420px) {
+  .product-modal__image-wrap {
+    height: 230px !important;
+    min-height: 230px !important;
+  }
+  .product-modal__actions .btn,
+  #modalWhatsApp {
+    min-height: 42px !important;
+    padding: 10px 12px !important;
+    font-size: 10px !important;
+    letter-spacing: .065em !important;
+  }
+}
+
+
+/* Rozana v55.20 — Afrooz mobile typography, menu line, and product modal fixes */
+.afrouz-signature-title--mobile{display:none;}
+@media (max-width:760px){
+  .afrouz-signature-title--desktop{display:none!important;}
+  .afrouz-signature-title--mobile{
+    display:block!important;
+    font-family:var(--serif)!important;
+    font-size:clamp(40px,12vw,56px)!important;
+    line-height:.98!important;
+    letter-spacing:-.035em!important;
+    color:var(--teal-dark)!important;
+    margin:0 0 22px!important;
+  }
+  .afrouz-signature-title--mobile span{display:block!important;}
+  .main-nav a,
+  .main-nav a:first-child{border-bottom:0!important;}
+  .main-nav a::after,
+  .main-nav a:first-child::after{display:none!important;content:none!important;transform:scaleX(0)!important;}
+  .product-modal{padding:10px!important;align-items:center!important;}
+  .product-modal__dialog{
+    width:min(100%,420px)!important;
+    max-height:calc(100svh - 20px)!important;
+    overflow-y:auto!important;
+    border-radius:18px!important;
+  }
+  .product-modal__grid{grid-template-columns:1fr!important;}
+  .product-modal__image-wrap{
+    min-height:320px!important;
+    padding:22px 18px 12px!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  .product-modal__image-wrap img{
+    width:min(78vw,292px)!important;
+    height:310px!important;
+    max-height:310px!important;
+    object-fit:cover!important;
+    object-position:center!important;
+    border-radius:16px!important;
+  }
+  .product-modal__content{padding:22px 18px 20px!important;}
+  .product-modal__actions{grid-template-columns:1fr!important;gap:10px!important;}
+  .product-modal__actions .btn{
+    width:100%!important;
+    min-height:48px!important;
+    padding:0 16px!important;
+    font-size:11px!important;
+    line-height:1.15!important;
+    white-space:normal!important;
+    text-align:center!important;
+  }
+}

@@ -111,7 +111,7 @@ a[aria-disabled="true"]:hover{transform:none}
 }
 
 
-/* Rozana v55.18 — Eventona mobile responsive correction */
+/* Rozana v55.20 — Eventona mobile responsive correction */
 @media (max-width: 760px){
   html,body{width:100%;max-width:100%;overflow-x:hidden;}
   .site-header{background:rgba(255,253,250,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(234,223,212,.75);}
