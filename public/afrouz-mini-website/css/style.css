@@ -1929,7 +1929,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.20 — Afrooz mobile WhatsApp button and product detail image fix */
+/* Rozana v55.22 — Afrooz mobile WhatsApp button and product detail image fix */
 @media (max-width: 760px) {
   .product-modal__image-wrap {
     width: 100% !important;
@@ -1997,7 +1997,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.20 — Afrooz mobile typography, menu line, and product modal fixes */
+/* Rozana v55.22 — Afrooz mobile typography, menu line, and product modal fixes */
 .afrouz-signature-title--mobile{display:none;}
 @media (max-width:760px){
   .afrouz-signature-title--desktop{display:none!important;}
@@ -2047,5 +2047,45 @@ body.modal-open {
     line-height:1.15!important;
     white-space:normal!important;
     text-align:center!important;
+  }
+}
+
+
+/* Rozana v55.22 — Afrooz mobile header/button/address/menu fixes */
+@media (max-width: 760px) {
+  .header-inner {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+  .header-cta {
+    margin-left: auto !important;
+    display: grid !important;
+    place-items: center !important;
+    padding: 0 !important;
+  }
+  .header-cta svg {
+    margin: 0 !important;
+  }
+  .main-nav a {
+    border-bottom: 1px solid rgba(255,255,255,.12) !important;
+  }
+  .main-nav a:last-child {
+    border-bottom: 0 !important;
+  }
+  .main-nav a::after,
+  .main-nav a:first-child::after {
+    display: none !important;
+    content: none !important;
+    transform: scaleX(0) !important;
+  }
+  .contact-strip-address {
+    display: grid !important;
+    grid-template-columns: auto minmax(0, auto) !important;
+    column-gap: 4px !important;
+    align-items: start !important;
+    justify-content: center !important;
+  }
+  .contact-strip-address svg {
+    margin-top: 1px !important;
   }
 }

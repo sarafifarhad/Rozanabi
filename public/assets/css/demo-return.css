@@ -1,4 +1,4 @@
-/* Rozana v55.20 — unified demo return button */
+/* Rozana v55.22 — unified demo return button */
 .demo-return-link,
 a.demo-return-link,
 body .demo-return-link{
@@ -55,7 +55,7 @@ a.demo-return-link:focus-visible{
 }
 
 
-/* Rozana v55.20 — keep remaining demo back buttons visually identical */
+/* Rozana v55.22 — keep remaining demo back buttons visually identical */
 .demo-return-link,
 a.demo-return-link,
 body .demo-return-link{

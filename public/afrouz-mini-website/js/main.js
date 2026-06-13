@@ -59,7 +59,9 @@ function openProductModal(card) {
     description: card.dataset.productDescription || '',
     whatsapp: card.dataset.productWhatsapp || '',
     share: card.dataset.productShare || '',
-    slug: card.dataset.productSlug || ''
+    slug: card.dataset.productSlug || '',
+    productUrl: card.dataset.productUrl || '',
+    shareImage: card.dataset.productShareImage || ''
   };
 
   modalProductImage.src = activeProduct.image;
@@ -85,10 +87,17 @@ function openProductModal(card) {
     });
   }
   modalProductDescription.textContent = activeProduct.description;
+  const productPageUrl = `${window.location.origin}${activeProduct.productUrl || `${window.location.pathname}#product=${activeProduct.slug || ''}`}`;
+  const productImageUrl = activeProduct.shareImage
+    ? `${window.location.origin}/${activeProduct.shareImage.replace(/^\//, '')}`
+    : (activeProduct.image ? `${window.location.origin}/${activeProduct.image.replace(/^\//, '')}` : '');
+
   const whatsappProductMessage = [
     "Hello Afrouz Perfumes",
     "",
     "I would like to order this product:",
+    productPageUrl ? `🔗 Product Link: ${productPageUrl}` : "",
+    productImageUrl ? `🖼 Product Image: ${productImageUrl}` : "",
     "",
     `🧴 Product: ${activeProduct.title}`,
     `📏 Size: ${activeProduct.size}`,
@@ -97,7 +106,7 @@ function openProductModal(card) {
     `🎁 Best For: ${activeProduct.best}`,
     "",
     "Please send me the price, availability, and delivery/pickup options."
-  ].join("\n");
+  ].filter(Boolean).join("\n");
 
   modalWhatsApp.href = `https://wa.me/96879207798?text=${encodeURIComponent(whatsappProductMessage)}`;
   if (shareNote) shareNote.textContent = '';
@@ -139,17 +148,45 @@ document.addEventListener('keydown', (event) => {
 if (modalShare) {
   modalShare.addEventListener('click', async () => {
     if (!activeProduct) return;
-    const shareUrl = `${window.location.origin}${window.location.pathname}#product=${activeProduct.slug || ''}`;
-    const shareText = `${activeProduct.share}\n${shareUrl}`;
+    const shareUrl = `${window.location.origin}${activeProduct.productUrl || `${window.location.pathname}#product=${activeProduct.slug || ''}`}`;
+    const shareImageUrl = activeProduct.shareImage
+      ? `${window.location.origin}/${activeProduct.shareImage.replace(/^\//, '')}`
+      : (activeProduct.image ? `${window.location.origin}/${activeProduct.image.replace(/^\//, '')}` : '');
+    const shareText = [
+      `${activeProduct.title} | Afrouz Perfumes`,
+      activeProduct.size ? `Size: ${activeProduct.size}` : '',
+      activeProduct.type ? `Type: ${activeProduct.type}` : '',
+      activeProduct.notes ? `Notes: ${activeProduct.notes}` : '',
+      activeProduct.best ? `Best For: ${activeProduct.best}` : '',
+      '',
+      shareUrl
+    ].filter(Boolean).join("\n");
+
     try {
       if (navigator.share) {
-        await navigator.share({ title: activeProduct.title, text: activeProduct.share, url: shareUrl });
-        if (shareNote) shareNote.textContent = 'Ready to share.';
+        let sharedWithImage = false;
+        if (shareImageUrl && navigator.canShare) {
+          try {
+            const response = await fetch(shareImageUrl, { cache: 'force-cache' });
+            const blob = await response.blob();
+            const file = new File([blob], `${activeProduct.slug || 'afrouz-product'}.jpg`, { type: blob.type || 'image/jpeg' });
+            if (navigator.canShare({ files: [file] })) {
+              await navigator.share({ title: `${activeProduct.title} | Afrouz Perfumes`, text: shareText, url: shareUrl, files: [file] });
+              sharedWithImage = true;
+            }
+          } catch (imageShareError) {
+            sharedWithImage = false;
+          }
+        }
+        if (!sharedWithImage) {
+          await navigator.share({ title: `${activeProduct.title} | Afrouz Perfumes`, text: shareText, url: shareUrl });
+        }
+        if (shareNote) shareNote.textContent = 'Ready to share with product image and details.';
       } else if (navigator.clipboard) {
-        await navigator.clipboard.writeText(shareText);
+        await navigator.clipboard.writeText(`${shareText}\n${shareImageUrl ? `Image: ${shareImageUrl}` : ''}`.trim());
         if (shareNote) shareNote.textContent = 'Product details copied. You can share it with friends.';
       } else {
-        if (shareNote) shareNote.textContent = 'Copy this page link and share it with friends.';
+        if (shareNote) shareNote.textContent = 'Copy this product link and share it with friends.';
       }
     } catch (error) {
       if (shareNote) shareNote.textContent = 'Sharing was cancelled.';
