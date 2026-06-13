@@ -109,3 +109,93 @@ a[aria-disabled="true"]:hover{transform:none}
   .insta-card{border-radius:20px}
   .social-actions{gap:8px}
 }
+
+
+/* Rozana v55.18 — Eventona mobile responsive correction */
+@media (max-width: 760px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden;}
+  .site-header{background:rgba(255,253,250,.94);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(234,223,212,.75);}
+  .nav-shell{height:70px;gap:12px;}
+  .brand-logo{width:142px;}
+  .demo-return-link{
+    top:78px!important;
+    left:13px!important;
+    right:13px!important;
+    width:auto!important;
+    min-height:40px!important;
+    padding:9px 12px!important;
+    border-radius:14px!important;
+    font-size:10px!important;
+    line-height:1.3!important;
+    letter-spacing:.045em!important;
+    text-align:center!important;
+    white-space:normal!important;
+    z-index:60!important;
+  }
+  .nav-links{top:128px;max-height:calc(100vh - 144px);}
+  .hero{padding:150px 0 34px;min-height:auto;overflow:visible;}
+  .hero::after{display:none;}
+  .hero-grid{grid-template-columns:1fr!important;gap:24px!important;align-items:start;}
+  .hero-copy{padding-top:0!important;min-width:0;}
+  h1{font-size:clamp(34px,10.4vw,46px)!important;line-height:1.04!important;letter-spacing:-.058em!important;max-width:100%;}
+  .line-oman{gap:10px;flex-wrap:wrap;}
+  .line-oman img{width:28px;}
+  .hero-subtitle{margin-top:16px;font-size:17px;line-height:1.34;}
+  .hero-text{margin-top:12px;font-size:14.5px;line-height:1.58;max-width:100%;}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:20px;}
+  .hero-actions .btn{width:100%;min-height:46px;font-size:13px;}
+  .hero-mobile-photo{height:178px;margin-top:20px;border-radius:18px;background-position:center center;}
+  .events-panel{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    margin:0;
+    padding:16px 13px 14px;
+    border:1px solid rgba(234,223,212,.92);
+    border-radius:22px;
+    background:rgba(255,253,250,.88);
+    box-shadow:0 16px 38px rgba(35,25,16,.075);
+  }
+  .panel-head{margin-bottom:12px;align-items:flex-start;gap:8px;}
+  .panel-head h2{font-size:15px;line-height:1.2;}
+  .panel-head a{font-size:11px;white-space:nowrap;padding-top:2px;}
+  .event-card-grid{grid-template-columns:1fr!important;gap:12px!important;}
+  .event-card{border-radius:16px;box-shadow:0 10px 26px rgba(35,25,16,.07);}
+  .event-image{height:145px;}
+  .event-image time{width:48px;height:54px;right:10px;top:10px;border-radius:13px;font-size:18px;}
+  .event-image time span{font-size:10px;margin-top:4px;}
+  .event-body{padding:12px 13px 13px;}
+  .event-body h3{font-size:15px;line-height:1.18;margin-bottom:6px;}
+  .event-body p{font-size:12px;}
+  .event-body small{font-size:11px;line-height:1.35;}
+  .section-pad-sm{padding:34px 0;}
+  .section-pad-xs{padding:16px 0 34px;}
+  .category-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .category-card{min-height:auto;padding:20px 12px 17px;border-radius:16px;}
+  .category-icon svg{width:34px;height:34px;}
+  .category-card h3{font-size:15px;}
+  .category-card p{font-size:12px;}
+  .about-grid,.submit-card,.insta-card,.footer-grid{grid-template-columns:1fr!important;}
+  .about-copy h2,.submit-copy h2{font-size:28px;}
+  .about-copy p,.submit-copy p{font-size:14.5px;line-height:1.62;max-width:100%;}
+  .about-photo img{height:240px;}
+  .submit-card{padding:22px 16px;gap:20px;}
+  .event-form{padding:14px;}
+  .event-form input,.event-form select{height:44px;font-size:13px;}
+  .insta-card{padding:18px 16px;gap:18px;}
+  .insta-copy h2{font-size:22px;}
+  .insta-photos{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .footer-grid{gap:20px;}
+}
+@media (max-width:420px){
+  .container{width:min(100% - 24px,1184px);}
+  .brand-logo{width:130px;}
+  .hero{padding-top:148px;}
+  h1{font-size:clamp(32px,10.8vw,41px)!important;}
+  .hero-subtitle{font-size:16px;}
+  .hero-text{font-size:14px;}
+  .hero-mobile-photo{height:160px;}
+  .events-panel{padding:14px 11px;}
+  .event-image{height:132px;}
+  .category-grid{grid-template-columns:1fr;}
+}
