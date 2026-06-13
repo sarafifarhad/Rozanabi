@@ -523,7 +523,7 @@ h3 { font-size: 1.34rem; }
 }
 
 
-/* Rozana v55.26 — Maya's Collection hero format and mobile banner fix */
+/* Rozana v55.27 — Maya's Collection hero format and mobile banner fix */
 @media (min-width: 861px) {
   .hero-copy {
     max-width: 650px;

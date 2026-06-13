@@ -1929,7 +1929,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.26 — Afrooz mobile WhatsApp button and product detail image fix */
+/* Rozana v55.27 — Afrooz mobile WhatsApp button and product detail image fix */
 @media (max-width: 760px) {
   .product-modal__image-wrap {
     width: 100% !important;
@@ -1997,7 +1997,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.26 — Afrooz mobile typography, menu line, and product modal fixes */
+/* Rozana v55.27 — Afrooz mobile typography, menu line, and product modal fixes */
 .afrouz-signature-title--mobile{display:none;}
 @media (max-width:760px){
   .afrouz-signature-title--desktop{display:none!important;}
@@ -2051,7 +2051,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.26 — Afrooz mobile header/button/address/menu fixes */
+/* Rozana v55.27 — Afrooz mobile header/button/address/menu fixes */
 @media (max-width: 760px) {
   .header-inner {
     justify-content: flex-start !important;
@@ -2091,7 +2091,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.26 — force Afrooz mobile WhatsApp header icon exact center + green */
+/* Rozana v55.27 — force Afrooz mobile WhatsApp header icon exact center + green */
 @media (max-width: 760px) {
   .site-header .header-inner .header-cta {
     position: relative !important;
