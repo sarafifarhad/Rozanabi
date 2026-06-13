@@ -521,3 +521,78 @@ h3 { font-size: 1.34rem; }
   .header-actions { gap: 9px; }
   .language-switch { gap: 5px; }
 }
+
+
+/* Rozana v55.24 — Maya's Collection hero format and mobile banner fix */
+@media (min-width: 861px) {
+  .hero-copy {
+    max-width: 650px;
+  }
+  .hero-copy h1 {
+    font-size: clamp(3.65rem, 6.25vw, 6rem);
+    line-height: .96;
+  }
+  .hero-nowrap {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    align-items: flex-start;
+    background:
+      linear-gradient(180deg,
+        rgba(251,248,241,0.12) 0%,
+        rgba(251,248,241,0.18) 42%,
+        rgba(251,248,241,0.94) 68%,
+        rgba(251,248,241,1) 100%),
+      url("../images/hero-generated.jpg") center 12px / min(112vw, 560px) auto no-repeat,
+      var(--cream) !important;
+  }
+  .hero-inner {
+    padding-top: 330px !important;
+    padding-bottom: 50px !important;
+  }
+  .hero-copy {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-copy .leaf-line {
+    margin-inline: auto;
+  }
+  .hero-copy p {
+    margin-inline: auto;
+  }
+  .hero .button-row {
+    justify-content: center;
+  }
+  .hero-nowrap {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    background:
+      linear-gradient(180deg,
+        rgba(251,248,241,0.08) 0%,
+        rgba(251,248,241,0.22) 43%,
+        rgba(251,248,241,0.95) 68%,
+        rgba(251,248,241,1) 100%),
+      url("../images/hero-generated.jpg") center 10px / min(116vw, 500px) auto no-repeat,
+      var(--cream) !important;
+  }
+  .hero-inner {
+    padding-top: 305px !important;
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.7rem, 12vw, 3.8rem);
+    line-height: .98;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-inner {
+    padding-top: 285px !important;
+  }
+}

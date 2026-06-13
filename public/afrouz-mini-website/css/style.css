@@ -1929,7 +1929,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.22 — Afrooz mobile WhatsApp button and product detail image fix */
+/* Rozana v55.24 — Afrooz mobile WhatsApp button and product detail image fix */
 @media (max-width: 760px) {
   .product-modal__image-wrap {
     width: 100% !important;
@@ -1997,7 +1997,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.22 — Afrooz mobile typography, menu line, and product modal fixes */
+/* Rozana v55.24 — Afrooz mobile typography, menu line, and product modal fixes */
 .afrouz-signature-title--mobile{display:none;}
 @media (max-width:760px){
   .afrouz-signature-title--desktop{display:none!important;}
@@ -2051,7 +2051,7 @@ body.modal-open {
 }
 
 
-/* Rozana v55.22 — Afrooz mobile header/button/address/menu fixes */
+/* Rozana v55.24 — Afrooz mobile header/button/address/menu fixes */
 @media (max-width: 760px) {
   .header-inner {
     justify-content: flex-start !important;
@@ -2087,5 +2087,57 @@ body.modal-open {
   }
   .contact-strip-address svg {
     margin-top: 1px !important;
+  }
+}
+
+
+/* Rozana v55.24 — force Afrooz mobile WhatsApp header icon exact center + green */
+@media (max-width: 760px) {
+  .site-header .header-inner .header-cta {
+    position: relative !important;
+    order: 2 !important;
+    margin-left: auto !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    max-width: 46px !important;
+    max-height: 46px !important;
+    flex: 0 0 46px !important;
+    padding: 0 !important;
+    display: block !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    letter-spacing: 0 !important;
+    color: #25D366 !important;
+    background: rgba(255,255,255,.96) !important;
+    border: 1px solid rgba(37,211,102,.92) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+  }
+  .site-header .header-inner .header-cta svg {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 23px !important;
+    height: 23px !important;
+    min-width: 23px !important;
+    min-height: 23px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    transform: translate(-50%, -50%) !important;
+    color: #25D366 !important;
+    fill: #25D366 !important;
+    vertical-align: middle !important;
+  }
+  .site-header .header-inner .header-cta svg path {
+    fill: #25D366 !important;
+  }
+  .site-header .header-inner .header-cta:hover,
+  .site-header .header-inner .header-cta:focus-visible {
+    background: #ffffff !important;
+    color: #25D366 !important;
+    transform: none !important;
   }
 }
