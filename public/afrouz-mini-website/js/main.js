@@ -106,8 +106,7 @@ function openProductModal(card) {
     `🎁 Best For: ${activeProduct.best}`,
     "",
     "Please send me the price, availability, and delivery/pickup options."
-  ].filter(Boolean).join("
-");
+  ].filter(Boolean).join("\n");
 
   modalWhatsApp.href = `https://wa.me/96879207798?text=${encodeURIComponent(whatsappProductMessage)}`;
   if (shareNote) shareNote.textContent = '';
